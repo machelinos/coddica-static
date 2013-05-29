@@ -1,0 +1,717 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"lis",
+				"list-style-type"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"round",
+				"roundDeg"
+			],
+			[
+				"body",
+				"bodycolor"
+			],
+			[
+				"conte",
+				"contentback"
+			],
+			[
+				"se",
+				"section	Tag"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"dictamen",
+				"dictamen-07"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"scal",
+				"scaleDownHeight"
+			],
+			[
+				"scale",
+				"scaleDownWidth"
+			],
+			[
+				"width",
+				"widthanimation"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"the_",
+				"the_title"
+			],
+			[
+				"the",
+				"the_title"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"curre",
+				"current-menu-item"
+			],
+			[
+				"curr",
+				"current-menu-item"
+			],
+			[
+				"current",
+				"current-category-ancestor"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"hid",
+				"hidden"
+			],
+			[
+				"base",
+				"basecolor"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"borde",
+				"border"
+			],
+			[
+				"bas",
+				"basecolor"
+			],
+			[
+				"over",
+				"overflow-x"
+			],
+			[
+				"overflo",
+				"overflow-y"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"sin",
+				"single-box-shadow"
+			],
+			[
+				"wrapper",
+				"wrapper-archive"
+			],
+			[
+				"noticia",
+				"noticia-reciente"
+			],
+			[
+				"bord",
+				"border-bottom"
+			],
+			[
+				"Ab",
+				"Abril"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"SELE",
+				"select"
+			],
+			[
+				"s",
+				"select	Tag"
+			],
+			[
+				"asc",
+				"ASC"
+			],
+			[
+				"else",
+				"elseif	elseif …"
+			],
+			[
+				"sub-",
+				"sub-menu-renta"
+			],
+			[
+				"page",
+				"page-template-page-oferta-educativa-php"
+			],
+			[
+				"lin",
+				"line-height"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"id_page_ancetor",
+				"id_page_ancestor1"
+			],
+			[
+				"cut",
+				"current_page_item"
+			],
+			[
+				"clear",
+				"clearfix"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"pointe",
+				"pointelle-slider-nav"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"NOTICIAS",
+				"noticias"
+			],
+			[
+				"alt",
+				"altfont"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1823,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Google Drive/repositories/coddica-boilerplate-wp/js/helper.js",
+			"settings":
+			{
+				"buffer_size": 14634,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Google Drive/repositories/coddica-boilerplate-wp/footer.php",
+			"settings":
+			{
+				"buffer_size": 577,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Google Drive/repositories/coddica-boilerplate-wp/style.css",
+		"/D/Google Drive/repositories/coddica-boilerplate-wp/scss-compass/_fonts.scss",
+		"/D/Dropbox/Agencia NN (3)/Lo Nuestro/Wordpress-starter-theme/320andup-granvia/scss-compass/_fonts.scss",
+		"/D/Google Drive/repositories/coddica-boilerplate-wp/scss-compass/style.scss",
+		"/D/Google Drive/repositories/coddica-boilerplate-wp/single.php",
+		"/D/Google Drive/repositories/coddica-boilerplate-wp/sidebar.php",
+		"/D/Google Drive/repositories/coddica-boilerplate-wp/searchform.php",
+		"/D/Google Drive/repositories/coddica-boilerplate-wp/search.php",
+		"/D/Google Drive/repositories/coddica-boilerplate-wp/screenshot.png",
+		"/D/Google Drive/repositories/coddica-boilerplate-wp/readme.md",
+		"/D/Google Drive/repositories/coddica-boilerplate-wp/footer.php",
+		"/D/Google Drive/repositories/coddica-boilerplate-wp/page.php",
+		"/D/Google Drive/repositories/coddica-boilerplate-wp/index.php",
+		"/D/Google Drive/repositories/coddica-boilerplate-wp/header.php",
+		"/D/Google Drive/repositories/coddica-boilerplate-wp/functions.php",
+		"/D/Google Drive/repositories/coddica-boilerplate-wp/comments.php",
+		"/D/Dropbox/Agencia NN (3)/Lo Nuestro/Wordpress-starter-theme/320andup-granvia/comments.php",
+		"/D/Google Drive/repositories/coddica-boilerplate-wp/archive.php",
+		"/D/Dropbox/Agencia NN (3)/Lo Nuestro/Wordpress-starter-theme/320andup-granvia/archive.php",
+		"/D/Dropbox/Agencia NN (3)/Lo Nuestro/Wordpress-starter-theme/320andup-granvia/404.php",
+		"/D/Google Drive/repositories/coddica-boilerplate/js/helper.js",
+		"/D/Dropbox/Agencia NN (3)/Lo Nuestro/Wordpress-starter-theme/320andup-granvia/footer.php",
+		"/D/Dropbox/Agencia NN (3)/Lo Nuestro/Wordpress-starter-theme/320andup-granvia/header.php",
+		"/D/Dropbox/Agencia NN (3)/Lo Nuestro/Wordpress-starter-theme/320andup-granvia/_/js/functions.js",
+		"/D/Dropbox/Agencia NN (3)/Lo Nuestro/Wordpress-starter-theme/320andup-granvia/page.php",
+		"/D/Dropbox/Agencia NN (3)/Lo Nuestro/Wordpress-starter-theme/320andup-granvia/index.php",
+		"/D/Dropbox/Agencia NN (3)/Lo Nuestro/Wordpress-starter-theme/320andup-granvia/_/js/selectivizr-min.js",
+		"/D/Dropbox/Agencia NN (3)/Lo Nuestro/Wordpress-starter-theme/320andup-granvia/_/js/script.js",
+		"/D/Dropbox/Agencia NN (3)/Lo Nuestro/Wordpress-starter-theme/320andup-granvia/_/inc/nav.php",
+		"/D/Dropbox/Agencia NN (3)/Lo Nuestro/Wordpress-starter-theme/320andup-granvia/_/inc/meta.php",
+		"/D/Google Drive/repositories/coddica-boilerplate/index.html",
+		"/D/Google Drive/repositories/coddica-boilerplate/404.html",
+		"/D/Google Drive/repositories/coddica-boilerplate/robots.txt",
+		"/D/Google Drive/repositories/coddica-boilerplate/humans.txt",
+		"/D/Google Drive/repositories/coddica-boilerplate/crossdomain.xml",
+		"/D/Google Drive/repositories/320andup/index.html",
+		"/D/Google Drive/repositories/coddica-boilerplate/js/plugins.js",
+		"/D/Google Drive/repositories/coddica-boilerplate/sass-compass/_normalize.scss",
+		"/D/Google Drive/repositories/normalize.css/normalize.css",
+		"/D/Google Drive/repositories/html5-boilerplate/.htaccess",
+		"/D/Google Drive/repositories/coddica-boilerplate/js/main.js",
+		"/D/Google Drive/repositories/coddica-boilerplate/sass-compass/estilos.scss",
+		"/D/Google Drive/repositories/coddica-boilerplate/sass-compass/_print.scss",
+		"/D/Google Drive/repositories/coddica-boilerplate/sass-compass/_texture.scss",
+		"/D/Google Drive/repositories/coddica-boilerplate/sass-compass/_variables.scss",
+		"/D/Google Drive/repositories/coddica-boilerplate/sass-compass/_typography.scss",
+		"/D/Google Drive/repositories/coddica-boilerplate/sass-compass/_tables.scss",
+		"/D/Google Drive/repositories/coddica-boilerplate/sass-compass/_site.scss",
+		"/D/Google Drive/repositories/coddica-boilerplate/sass-compass/_page.scss",
+		"/D/Google Drive/repositories/coddica-boilerplate/sass-compass/_modernizr.scss",
+		"/D/Google Drive/repositories/coddica-boilerplate/sass-compass/_mixins.scss",
+		"/D/Google Drive/repositories/coddica-boilerplate/sass-compass/_font-awesome.scss",
+		"/D/Google Drive/repositories/coddica-boilerplate/sass-compass/_elements.scss",
+		"/D/Google Drive/repositories/coddica-boilerplate/sass-compass/_colour.scss",
+		"/D/Google Drive/repositories/coddica-boilerplate/sass-compass/_buttons.scss",
+		"/D/Google Drive/repositories/coddica-boilerplate/css/main.css",
+		"/D/Google Drive/repositories/coddica-boilerplate/css/normalize.css",
+		"/D/Google Drive/repositories/html5-boilerplate/css/main.css",
+		"/C/xampp/apache/conf/httpd.conf",
+		"/D/Dropbox/Agencia NN (3)/Lo Nuestro/Wordpress-starter-theme/320andup-granvia/scss-compass/_variables.scss",
+		"/D/Dropbox/Agencia NN (3)/Lo Nuestro/Wordpress-starter-theme/320andup-granvia/scss-compass/_mixins.scss",
+		"/D/Dropbox/Agencia NN (3)/Lo Nuestro/Wordpress-starter-theme/320andup-granvia/scss-compass/_site.scss",
+		"/D/Dropbox/Agencia NN (3)/Lo Nuestro/Wordpress-starter-theme/320andup-granvia/scss-compass/style.scss",
+		"/D/Dropbox/Agencia NN (3)/Lo Nuestro/Wordpress-starter-theme/320andup-granvia/_/js/modernizr-2.5.3-min.js",
+		"/D/Dropbox/Agencia NN (3)/Lo Nuestro/Wordpress-starter-theme/320andup-granvia/_/js/plugins.js",
+		"/D/Dropbox/Agencia NN (3)/Lo Nuestro/Wordpress-starter-theme/320andup-granvia/_/img/h/apple-touch-icon-144x144-precomposed.png",
+		"/D/Dropbox/Agencia NN (3)/Taller Programación Web/Web/css/grid.css",
+		"/D/Dropbox/Agencia NN (3)/Taller Programación Web/Web/css/normalize.css",
+		"/D/Dropbox/Agencia NN (3)/Taller Programación Web/HTML/index.html",
+		"/D/Dropbox/Agencia NN (3)/Taller Programación Web/HTML/css/estilos.css",
+		"/D/Dropbox/Agencia NN (3)/Taller Programación Web/Web/index.html",
+		"/D/Dropbox/Agencia NN (3)/Taller Programación Web/Web/css/estilos.css",
+		"/D/Dropbox/Agencia NN (3)/Taller Programación Web/HTML/css/grid.css",
+		"/D/Dropbox/Agencia NN (3)/Taller Programación Web/HTML/css/normalize.css",
+		"/D/Google Drive/web/pinknoise/scss-compass/_variables.scss",
+		"/D/Google Drive/web/pinknoise/scss-compass/_site.scss",
+		"/D/Google Drive/web/pinknoise/scss-compass/_typography.scss",
+		"/D/Google Drive/web/pinknoise/js/plugins.js",
+		"/D/Google Drive/web/pinknoise/scss-compass/_1382.scss",
+		"/D/Google Drive/web/pinknoise/css/prueba.css",
+		"/D/Google Drive/web/pinknoise/js/script.js",
+		"/D/Google Drive/web/pinknoise/scss-compass/_colour.scss",
+		"/D/Google Drive/web/pinknoise/scss-compass/_fonts.scss",
+		"/D/Google Drive/web/pinknoise/scss-compass/_elements.scss",
+		"/D/Google Drive/web/pinknoise/scss-compass/_mixins.scss",
+		"/D/Google Drive/web/pinknoise/css/estilos.css",
+		"/D/Google Drive/web/pinknoise/scss-compass/_reset.scss",
+		"/D/Google Drive/web/pinknoise/scss-compass/estilos.scss",
+		"/D/Google Drive/web/pinknoise/scss/320andup-scss.scss",
+		"/D/Google Drive/web/pinknoise/js/jquery-1.8.3.min.js",
+		"/C/Users/machelinos/Downloads/woothemes-FlexSlider-version-2.1-7-ga4647ed/woothemes-FlexSlider-a4647ed/flexslider.css",
+		"/C/Users/machelinos/Downloads/woothemes-FlexSlider-version-2.1-7-ga4647ed/woothemes-FlexSlider-a4647ed/jquery.flexslider-min.js",
+		"/C/Users/machelinos/Downloads/woothemes-FlexSlider-version-2.1-7-ga4647ed/woothemes-FlexSlider-a4647ed/README.mdown",
+		"/D/Google Drive/web/pinknoise/js/selectivizr-min.js",
+		"/D/Google Drive/web/pinknoise/js/helper.js",
+		"/D/Google Drive/web/pinknoise/js/jquery-1.9.1.min.js",
+		"/D/Dropbox/Agencia NN (3)/Taller Programación Web/Web/prueba.html",
+		"/D/Dropbox/Agencia NN (3)/Taller Programación Web/Web/img/bn01.jpg",
+		"/D/Dropbox/Agencia NN (3)/Taller Programación Web/Web/img/23590371-03.jpg",
+		"/C/Users/machelinos/Downloads/InverseSoft_Round_Player_v2/button.skin/controls.png",
+		"/D/Dropbox/Marcel Cabrera/Clientes/criminologiaysociedad/index.html",
+		"/D/Dropbox/Marcel Cabrera/Clientes/criminologiaysociedad/articulos/numero-02.html",
+		"/D/Dropbox/Marcel Cabrera/Clientes/criminologiaysociedad/articulos/index.html",
+		"/D/Google Drive/web/asenl/safeasenl/wp-content/themes/320andup-granvia/_/js/script.js",
+		"/D/Google Drive/web/asenl/safeasenl/wp-content/themes/320andup-granvia/scss-compass/_page.scss",
+		"/D/Google Drive/web/asenl/safeasenl/wp-content/themes/320andup-granvia/_/js/plugins.js",
+		"/D/Google Drive/web/asenl/safeasenl/wp-content/themes/320andup-granvia/scss-compass/_992.scss",
+		"/D/Google Drive/web/asenl/safeasenl/wp-content/themes/320andup-granvia/scss-compass/_768.scss",
+		"/C/Users/machelinos/Desktop/plugin.js",
+		"/C/Users/machelinos/Downloads/jspkg-archive/lib/jquery.easytabs.js",
+		"/D/Google Drive/web/asenl/safeasenl/wp-content/themes/320andup-granvia/scss-compass/_typography.scss",
+		"/C/Users/machelinos/Downloads/jspkg-archive/lib/jquery.easytabs.min.js",
+		"/D/Google Drive/web/asenl/safeasenl/wp-content/themes/320andup-granvia/functions.php",
+		"/D/Google Drive/web/asenl/safeasenl/wp-content/themes/320andup-granvia/scss-compass/_buttons.scss",
+		"/D/Google Drive/web/asenl/safeasenl/wp-content/themes/320andup-granvia/scss-compass/_site.scss",
+		"/D/Google Drive/web/asenl/safeasenl/wp-content/themes/320andup-granvia/scss-compass/style.scss",
+		"/D/Google Drive/web/asenl/safeasenl/wp-content/themes/320andup-granvia/scss-compass/_variables.scss",
+		"/D/Google Drive/web/asenl/safeasenl/wp-content/themes/320andup-granvia/footer.php",
+		"/D/Google Drive/web/asenl/safeasenl/wp-content/themes/320andup-granvia/scss-compass/_colour.scss",
+		"/D/Google Drive/web/asenl/safeasenl/wp-content/themes/320andup-granvia/header.php",
+		"/D/Google Drive/web/asenl/safeasenl/wp-content/themes/320andup-granvia/scss-compass/_plugins.scss",
+		"/D/Google Drive/web/ucs/safeucs/wp-content/themes/320andup-granvia/page.php",
+		"/D/Google Drive/web/ucs/safeucs/wp-content/themes/320andup-granvia/header.php",
+		"/D/Google Drive/web/ucs/safeucs/wp-content/themes/320andup-granvia/scss-compass/_768.scss",
+		"/D/Google Drive/web/ucs/safeucs/wp-content/themes/320andup-granvia/scss-compass/_960.scss",
+		"/D/Google Drive/web/ucs/safeucs/wp-content/themes/320andup-granvia/scss-compass/_site.scss",
+		"/D/Google Drive/web/ucs/safeucs/wp-content/themes/320andup-granvia/scss-compass/_variables.scss",
+		"/D/Google Drive/web/ucs/safeucs/wp-content/themes/320andup-granvia/scss-compass/_fonts.scss"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"<open files>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Directory",
+			"DocumentRoot",
+			".whats_on_your_plate-arrow",
+			".whats_on_your_plate-slider",
+			".slider",
+			"whats_on_your_plate-plate",
+			".whats_on_your_plate-plate",
+			".slider",
+			"hr",
+			"basecolor",
+			"footer",
+			"child",
+			"font-family",
+			"rgb(38, 59, 118)",
+			"footer",
+			"http://www.marcelcabrera.mx/desarrollo/laredosafety",
+			".datos",
+			"cboxTitle",
+			"http://www.marcelcabrera.mx/desarrollo/edenes",
+			"@font-face",
+			"fonts",
+			"www.marcelcabrera.mx/desarrollo/ucs",
+			".wrapper",
+			"aside",
+			"page-template-page-oferta-educativa-php",
+			"frank",
+			"header .busqueda form#searchform input#s",
+			"frank",
+			"$altfont",
+			"frank",
+			"'frank'",
+			"$altfont",
+			"frank",
+			"'frank'",
+			"http://localhost/laredosafety",
+			"localhost",
+			"http://www.marcelcabrera.mx/desarrollo/laredo",
+			"http://www.marcelcabrera.mx/desarrollo",
+			"http://www.marcelcabrera.mx/desarrollo/laredosafety",
+			"http://localhost/",
+			"localhost",
+			"localhost/",
+			"localhost",
+			".contenido-principal",
+			"main-content",
+			"sidebar",
+			"inline-block",
+			"column",
+			"http://localhost/ucs",
+			"localhost",
+			"page-template-page-noticias-php",
+			".imagen-page",
+			".single",
+			"imagen-single",
+			"format",
+			"December",
+			"Month",
+			"en",
+			"lang",
+			"en-",
+			"lang",
+			".imagen-page",
+			"imagen-page",
+			"@include single-box-shadow",
+			".entry",
+			"entry",
+			"display_errors",
+			"8388608",
+			"max_upload_size",
+			"max size",
+			"max upload",
+			"altfontweight",
+			"clearfix",
+			"'lato",
+			"'cartogothicstd"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"http://www.laredosafety.com",
+			"http://www.edenes.com.mx",
+			"www.ucs.edu.mx",
+			"http://www.marcelcabrera.mx/desarrollo/ls",
+			"http://www.marcelcabrera.mx/desarrollo/laredosafety",
+			"http://www.marcelcabrera.mx/desarrollo/laredo",
+			"http://www.marcelcabrera.mx/desarrollo/",
+			"http://www.marcelcabrera.mx/",
+			"www.marcelcabrera.mx/desarrollo/",
+			"www.marcelcabrera.mx/desarrollo",
+			"http://www.marcelcabrera.mx/desarrollo/ucs",
+			"'_/fonts/lato",
+			"'_/fonts/cartogothicstd"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 1823,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1226,
+								1226
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 76.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/Google Drive/repositories/coddica-boilerplate-wp/js/helper.js",
+					"settings":
+					{
+						"buffer_size": 14634,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14634,
+								14634
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6598.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/Google Drive/repositories/coddica-boilerplate-wp/footer.php",
+					"settings":
+					{
+						"buffer_size": 577,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								236,
+								236
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 281.0,
+	"status_bar_visible": true
+}

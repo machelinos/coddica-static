@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Marcel Cabrera -- Developer -- @machelinos
+    Joyce Muñoz -- Designer -- @joymu
+
+# THANKS
+
+    <name>
+
+# TECHNOLOGY COLOPHON
+	
+	HTML5 Boilerplate, 320andUp
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr, Selectivizr
