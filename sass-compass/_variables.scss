@@ -21,14 +21,14 @@ $white 			: rgb(255,255,255);
 // 1. ROOT 					==============================
 
 $bodycolor : $white;
-$textcolor : black;
+$textcolor : rgb(85,85,85);
 
 // 2. TYPOGRAPHY 			==============================
 
-$basefont : "Helvetica Neue", Helvetica, Arial, sans-serif;
+$basefont : "SegoeUI", Helvetica, Arial, sans-serif;
 $basefontsize : 16;
 $baselineheight : 1.5em;
-$baseheadingfont : inherit;
+$baseheadingfont : "MuseoSans300", Georgia, serif;
 $baseheadingfontweight : bold;
 $baseheadingfontcolor : inherit;
 
@@ -42,6 +42,8 @@ $codefont : Monaco, Courier New, monospace;
 $basecolor 		: rgb(45,53,62);
 $compcolor 		: adjust-hue($basecolor, 180);
 $bordercolor    : lighten($basecolor, 60%);
+$lightcolor 	: rgb(0,173,239);
+$brightcolor 	: rgb(255,77,77);
 
 // Links
 

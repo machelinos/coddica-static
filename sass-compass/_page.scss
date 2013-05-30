@@ -1,11 +1,24 @@
-// ==========================================================
+// GENERAL ==========================================================
 
-// 320 and Up by Andy Clarke
-// Version: 3.0
-// URL: http://stuffandnonsense.co.uk/projects/320andup/
-// Apache License: v2.0. http://www.apache.org/licenses/LICENSE-2.0
+.contenedor{
+	margin:0 10px;
+}
 
-// ==========================================================
+.screen-reader-text{
+	@include visuallyhidden();
+}
 
-
+// HEADER ===========================================================
+header{
+	border-bottom:1px solid $textcolor;
+	padding:7px 0 13px 0;
+	h1{
+		text-align:center;
+		a{
+			width:55%;
+			margin:0 auto;
+			display:block;
+		} //a
+	} //h1
+}//header
 
