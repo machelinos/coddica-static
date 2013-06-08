@@ -75,7 +75,11 @@ top : 6px;
 float : right;
 padding : 4px 12px;
 @include font-size(14);
-background-color : lighten($basecolor, 75%); }
+background-color : lighten($basecolor, 75%);
+	&:visited{
+		color:inherit;
+	}
+}
 
 &:hover {
 background-color : lighten($basecolor, 75%); }
@@ -92,16 +96,19 @@ background : transparent url(../img/a-rss.png) no-repeat 0 0;
 
 // TYPOGRAPHY ====================================================
 
+
 p,
 ol,
 ul,
 dl,
 address {
+font-family:$basefont;
 margin-bottom : $baselineheight;
-@include font-size(14);
+@include font-size(16);
 line-height : $baselineheight; }
 
 small {
+font-family:$basefont;
 @include font-size(14); }
 
 ul,

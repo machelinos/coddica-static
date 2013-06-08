@@ -148,21 +148,26 @@ overflow: visible; } } }
 
 @mixin breakpoint($point) {
   @if $point == intern {
-	@media only screen and (min-width: 600px) {
+	@media only screen and (min-width: 480px) {
 		@content;
 	}
   }
   @else if $point == junior {
-	@media only screen and (min-width: 768px) {
+	@media only screen and (min-width: 600px) {
 		@content;
 	}
   }
   @else if $point == senior {
-	@media only screen and (min-width: 960px) {
+	@media only screen and (min-width: 768px) {
 		@content;
 	}
   }
   @else if $point == director {
+	@media only screen and (min-width: 768px) {
+		@content;
+	}
+  }
+  @else if $point == jefe {
 	@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
 		@content;
 	}

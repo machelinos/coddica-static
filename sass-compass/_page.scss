@@ -1,5 +1,4 @@
 // GENERAL ==========================================================
-
 .contenedor{
 	margin:0 10px;
 }
@@ -8,9 +7,124 @@
 	@include visuallyhidden();
 }
 
+.cerrar-menu{
+	display:none;
+}
+
+section, footer{
+	padding:50px 0;
+
+	h1{
+		@include font-size(45);
+	}
+}
+
+
+// BOTONES GENERAL ==========================================================
+
+.ribbon-wrap {
+	display: block;
+	position: relative;
+	z-index: 1;
+	text-align:center;
+}
+
+.ribbon {
+	display: inline-block;
+	background: $lightcolor;
+	color: $white;
+	font-family: $baseheadingfont;
+	position: relative;
+	text-align: center;
+	padding: 11px 25px;
+	margin: 15px 0;
+	line-height: 18px;
+	@include font-size(21);
+	@include transition(color, 0.05s, linear);
+
+	.resaltar-boton &{
+		background:$brightcolor;
+	}
+
+	&:visited{
+		color:$white;
+	}
+
+	&:active{
+
+	}
+}
+
+.ribbon:before, .ribbon:after {
+	content: "";
+	position: absolute;
+	display: block;
+	bottom: 0;
+	z-index: 1;
+	@include transition(border, 0.05s, linear);
+}
+
+.ribbon:before {
+	left: -31px;
+	border: 20px solid $lightcolor;
+	border-left-color: transparent;
+
+	.resaltar-boton &{
+		border: 20px solid $brightcolor;
+		border-left-color: transparent;
+	}
+}
+
+.ribbon:after {
+	right: -20px;
+	border-left-width: 20px;
+	border-right-color: transparent;
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	border-left: 20px solid $lightcolor;
+
+	.resaltar-boton &{
+		border-left: 20px solid $brightcolor;
+	}
+}
+
+.ribbon:hover {
+	background: darken($lightcolor, 20%);
+	text-decoration:none;
+	color:$white;
+
+	.resaltar-boton &{
+		background: darken($brightcolor, 20%);
+	}
+}
+
+.ribbon:hover:before {
+  border-color: darken($lightcolor, 20%);
+  border-left-color: transparent;
+
+	.resaltar-boton &{
+	  border-color: darken($brightcolor, 20%);
+	  border-left-color: transparent;
+	}
+
+}
+
+.ribbon:hover:after {
+  border-left-color: darken($lightcolor, 20%);
+
+  .resaltar-boton &{
+  	border-left-color: darken($brightcolor, 20%);
+  }
+}
+
+
+
+
 // HEADER ===========================================================
 header{
-	border-bottom:1px solid $textcolor;
+	border-bottom:1px solid lighten($textcolor,50%);
 	padding:7px 0 13px 0;
 	h1{
 		text-align:center;
@@ -18,7 +132,411 @@ header{
 			width:55%;
 			margin:0 auto;
 			display:block;
+			@include breakpoint(intern){
+				width:45%;
+			}
+			@include breakpoint(junior){
+				width:35%;
+			}
 		} //a
 	} //h1
 }//header
 
+.buscar-boton{
+	position: absolute;
+	display: block;
+	cursor: pointer;
+	top: 23px;
+	right:10px;
+	span{
+		@include font-size(21);
+	} //span
+} //.buscar-boton
+
+.busqueda{
+	display:none;
+	background:$lightcolor;
+	padding:10px 0;
+	form{
+		position:relative;
+
+		input{
+			margin-bottom:0;
+			border:0;
+			padding:7px;
+		}
+
+		input[type="submit"]{
+			border:1px solid $textcolor;
+			position:absolute;
+			right:0;
+			top:0;
+			padding-left:10px;
+			padding-right:10px;
+			background:$textcolor;
+			color:$white;
+		}
+
+	} //form
+
+} //busqueda
+
+
+// SECTION INTRO ===========================================================
+.intro{
+	text-align:center;
+	h1{
+		font-family:$baseheadinglight;
+		@include font-size(24);
+		width:84.41176470588235%;
+		margin:0 auto 25px auto;
+		@include breakpoint(intern){
+			width:70%;
+		}
+		@include breakpoint(junior){
+			width:45%;
+			float:right;
+		}
+	} //h1
+
+	img{
+		@include breakpoint(junior){
+			width:49%;
+			float:left;
+		}
+	}
+
+	p{
+		font-family:$baseheadinglight;
+		@include font-size(21);
+		@include breakpoint(junior){
+			margin-top:195px;
+		}
+
+		&.llamada-accion{
+			font-family:$basefont;
+			@include font-size(16);
+			@include breakpoint(junior){
+				margin-top:15px;
+			}
+		} //.llamada-accion
+	} //p
+
+} //.intro
+
+.intro-em{
+	color:$lightcolor;
+	text-transform:uppercase;
+	font-family:$baseheadingfont;
+	@include font-size(30);
+}
+
+.location:before{
+	content: "\e009";
+	font-family:"icomoon";
+	color:$brightcolor;
+	@include font-size(21);
+}
+
+
+// SECTION proyectos recientes ===========================================================
+.resaltar{
+	background:$lightcolor;
+
+	h1, p {
+		color:$white;
+	}
+} //resaltar
+
+.proyectos-recientes{
+	article{
+		text-align:center;
+
+		h1{
+			color:$black;
+			@include font-size(21);
+		}
+
+	} //article
+
+} //proyectos-recientes
+
+
+// SECTION servicios ===========================================================
+.servicios{
+	ul{
+		list-style-type:none;
+		color: $textcolor;
+	}
+
+	li{
+		min-height:70px;
+		padding:30px 10px;
+		border-bottom:1px solid lighten($textcolor,30%);
+		&:last-child{
+			border:0;
+		}
+	}
+
+	li:before{
+		content:" ";
+		font-family:"icomoon";
+		border: 2px solid;
+		display:block;
+		float:left;
+		width:70px;
+		height:70px;
+		line-height:70px;
+		text-align:center;
+		margin-right:10px;
+		@include font-size(30);
+		@include border-radius(50%);
+	}
+
+	li{
+		&:first-child, &:last-child{
+			padding-top:50px;
+			padding-bottom:10px;
+			&:before{
+				margin-top:-20px;
+			}
+		}
+
+		&:first-child:before{
+			content:"\e004";
+		}
+
+		&:nth-child(2){
+			padding-top:50px;
+			padding-bottom:10px;
+
+			&:before{
+				content:"\e006";
+				margin-top:-20px;
+			}
+
+		}
+
+		&:nth-child(3){
+			&:before{
+				content:"\e00f";
+			}
+		}
+
+		&:nth-child(4){
+			padding-top:50px;
+			padding-bottom:10px;
+
+			&:before{
+				content:"\e002";
+				margin-top:-20px;
+			}
+		}
+
+		&:nth-child(5):before{
+			content:"\e000";
+		}
+	} //li
+
+} //servicios
+
+// SECTION proceso ===========================================================
+.resaltar-poco{
+	background:rgb(237,237,237);
+}
+
+.proceso{
+	text-align:center;
+
+	p{
+		font-family:$baseheadingfont;
+		@include font-size(21);
+		margin-bottom:0;
+	}
+}
+
+// SECTION contacto ===========================================================
+.contacto{
+	padding-bottom:0;
+
+	.contenedor{
+		margin-bottom:0.65em;
+	}
+
+	.panel{
+		@include box-sizing(border-box);
+		margin:0;
+	}
+
+	.liquidslider{
+		background:$lightcolor;
+	}
+
+	form{
+		margin:15px 0;
+		text-align:right;
+	}
+
+	input, textarea{
+		border:0;
+		padding:15px;
+		margin-bottom:15px;
+	}
+
+	.ribbon{
+		margin-right:30px;
+	}
+
+	textarea{
+		height:150px;
+		resize:none;
+	}
+}
+
+.liquid-nav{
+	margin:0 10px;
+	text-align:center;
+
+	ul{
+		width:280px;
+		margin:0 auto;
+		float:none !important;
+		@include breakpoint(intern){
+			width:460px;
+		}
+
+		.liquid-slider-wrapper &{
+			padding-bottom:30px;
+		}
+
+		li{
+			.liquid-slider-wrapper &{
+				display:inline-block;
+				margin-right:1px;
+				@include breakpoint(intern){
+					margin-right:5px;
+				}
+
+			}
+		}
+	}
+
+	li{
+
+		a{
+			display:inline-block;
+			font-family:'icomoon';
+			width:50px;
+			height:50px;
+			line-height:50px;
+			@include border-radius(50%);
+			@include breakpoint(intern){
+				width:60px;
+				height:60px;
+				line-height:60px;
+			}
+
+			&:before{
+				color:$white;
+				@include font-size(18);
+			}
+
+			.liquid-slider-wrapper &{
+				background:$brightcolor;
+				padding:2px;
+
+				&.current, &:hover{
+					background:$lightcolor;
+				}
+
+				&.current{
+					background:$lightcolor;
+					position:relative;
+					overflow:visible;
+					&:after{
+						content:url(../img/senalador-abajo.svg);
+						position:absolute;
+						bottom:-68px;
+						left:0;
+					}
+
+				}
+			}
+
+		} //a
+
+		&:first-child a:before{
+			content:'\e008';
+		}
+
+		&:nth-child(2) a:before{
+			content:'\e005';
+		}
+
+		&:nth-child(3) a:before{
+			content:'\e00d';
+		}
+
+		&:nth-child(4) a:before{
+			content:'\e00a';
+		}
+
+		&:nth-child(5) a:before{
+			content:'\e003';
+		}
+
+	} //li
+
+} //liquid-nav
+
+.contenedor-fb, .contenedor-gplus, .contenedor-yt{
+	background:$white;
+}
+
+.contenedor-gplus{
+	width:95%;
+	margin:0 auto;
+	overflow:hidden;
+	text-align:center;
+	padding-top:15px;
+}
+
+
+.contenedor-yt{
+	padding:15px 5%;
+	text-align:center;
+
+	.yt-boton{
+		@include font-size(36);
+		color: $brightcolor;
+	}
+
+	.ribbon{
+		margin-right:0;
+	}
+}
+
+.twitter-timeline{
+	width:100% !important;
+}
+
+
+// FOOTER ===========================================================
+.resaltar-menos{
+	background:rgb(68,68,68);
+	color: $white;
+}
+
+footer{
+	p{
+		text-align:center;
+	}
+	a{
+		color: $brightcolor;
+	}
+}
+
+small{
+	text-align:center;
+	@include font-size(14);
+}

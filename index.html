@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang ="es"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="es"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="es"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang ="es" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="es" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="es" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es" xmlns:fb="http://ogp.me/ns/fb#"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -46,8 +46,14 @@
                 </a>
             </h1>
             <div class="menu-button">
-                <span aria-hidden="true" data-icon="&#x6d;"></span>
-                <span class="screen-reader-text">MEN&Uacute;</span>
+                <span aria-hidden="true" data-icon="&#xe007;" class="abrir-menu"></span>
+                <span class="screen-reader-text abrir-menu">MEN&Uacute;</span>
+                <span aria-hidden="true" data-icon="&#xe001;" class="cerrar-menu"></span>
+                <span class="screen-reader-text cerrar-menu">CERRAR</span>
+            </div>
+            <div class="buscar-boton">
+                <span aria-hidden="true" data-icon="&#xe002;"></span>
+                <span class="screen-reader-text">BUSCAR</span>
             </div>
         </header>
 
@@ -60,14 +66,147 @@
                 <li><a href="#">CONTACTO</a></li>
             </ul>
         </nav>
-<!--
-        <a href="#rss" class="icon-alone">
-          <span aria-hidden="true" data-icon="&#x6d;"></span>
-          <span class="screen-reader-text">RSS</span>
-        </a>
--->
 
+        <div class="busqueda">
+            <form class="contenedor">
+                <input type="text" name="buscar" id="buscar">
+                <input type="submit" value="Buscar">
+            </form>
+        </div>
+        <!-- final .busqueda -->
 
+        <section class="intro contenedor clearfix">
+            <h1>
+                Somos un estudio de <br><span class="intro-em">dise&ntilde;o web</span> y <span class="intro-em">programaci&oacute;n</span> <span class="location">en Monterrey, M&eacute;xico</span>
+            </h1>
+            <img src="img/dispositivos-responsivo.svg" alt="Dise&ntilde;o y programaci&oacute;n responsivo, correctamente visible en cualquier dispositivo y tamaño de pantalla">
+            <p>Conectamos tu marca con tu audiencia a trav&eacute;s de experiencias de usuario intuitivas, atractivas y memorables.</p>
+
+            <p class="llamada-accion">
+                &iquest;Tienes un proyecto web por realizar&quest;<br>
+                <strong class="ribbon-wrapp"><a class="ribbon" href="#">Cont&aacute;ctanos</a></strong>
+
+            </p>
+        </section>
+        <!-- intro -->
+
+        <section class="proyectos-recientes resaltar">
+            <div class="contenedor">
+                <h1>proyectos recientes</h1>
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <article>
+                                <span data-picture data-alt="Sitio web de Pinknoise Soluciones de Audio">
+                                    <span data-src="img/pink-movil.png"></span>
+                                    <span data-src="img/pink-tablet.png"     data-media="(min-width: 768px)"></span>
+                                    <span data-src="large.jpg"      data-media="(min-width: 800px)"></span>
+                                    <span data-src="extralarge.jpg" data-media="(min-width: 1000px)"></span>
+
+                                    <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+                                    <noscript>
+                                        <img src="external/imgs/small.jpg" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
+                                    </noscript>
+                                </span>
+                                <img src="img/pink-tablet.png" alt="Pinknoise.Dise&ntilde;o de Audio">
+                                <h1>Pinknoise. Dise&ntilde;o de Audio</h1>
+                                <p>Programaci&oacute;n y desarrollo responsivo</p>
+                                <strong class="ribbon-wrapp resaltar-boton"><a class="ribbon" href="#">Ver proyecto</a></strong>
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+                                <img src="img/pink-tablet.png" alt="Pinknoise.Dise&ntilde;o de Audio">
+                                <h1>Pinknoise. 2</h1>
+                                <p>Programaci&oacute;n y desarrollo responsivo</p>
+                                <strong class="ribbon-wrapp resaltar-boton"><a class="ribbon" href="#">Ver proyecto</a></strong>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+                <!-- fin flexslider -->
+
+            </div>
+            <!-- fin contenedor -->
+        </section>
+        <!-- proyectos-recientes -->
+
+        <section class="servicios contenedor">
+            <h1>servicios</h1>
+            <ul>
+                <li>Dise&ntilde;o de interfaz de usuario</li>
+                <li>Dise&ntilde;o y programaci&oacute;n responsivo</li>
+                <li>Integraci&oacute;n a administrador de contenido (Wordpress, Joomla, Drupal)</li>
+                <li>Optimizaci&oacute;n para motores de b&uacute;squeda (SEO)</li>
+                <li>Consultor&iacute;a en proyectos web</li>
+            </ul>
+
+        </section>
+        <!-- section.servicios -->
+
+        <section class="proceso resaltar-poco">
+            <div class="contenedor">
+                <p>Estamos convencidos que un proceso debidamente estructurado y transparente da como resultado proyectos exitosos</p>
+                <strong class="ribbon-wrapp"><a class="ribbon" href="#">Nuestro proceso</a></strong>
+            </div>
+
+        </section>
+        <!-- section.proceso -->
+
+        <section class="contacto">
+            <h1 class="contenedor">contacto</h1>
+                  <div class="liquid-slider"  id="slider-id">
+                    <div>
+                        <h2 class="title"> </h2>
+                        <form action="#" method="post" class="contenedor">
+                            <input type="text" id="nombre" class="nombre" name="nombre" placeholder="Nombre*">
+                            <input type="mail" id="email" class="email" name="email" placeholder="Email*">
+                            <textarea id="mensaje" class="mensaje" name="mensaje" placeholder="Mensaje*"></textarea>
+                            <strong class="ribbon-wrapp resaltar-boton"><a href="#" class="ribbon">Enviar</a></strong>
+
+                        </form>
+                    </div>
+                    <!-- mail -->
+
+                    <div>
+                      <h2 class="title"></h2>
+                      <a class="twitter-timeline" href="https://twitter.com/coddica" data-widget-id="342015861684592640" height="300px">Tweets by @coddica</a>
+                        <script>
+                            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                        </script>
+
+                    </div>
+                    <div>
+                      <h2 class="title"></h2>
+                      <div id="fb-contenedor" class="contenedor-fb">
+                      </div>
+                    </div>
+                    <div>
+                      <h2 class="title"></h2>
+                      <div id="gplus-contenedor" class="contenedor-gplus">
+                        <div class="g-plus" data-href="https://plus.google.com/114331353767221159686"></div>
+
+                      </div>
+                    </div>
+                    <div >
+                      <h2 class="title"></h2>
+                      <div class="contenedor-yt">
+                            <p>C&oacute;ddica en <span aria-hidden="true" data-icon="&#xe003;" class="yt-boton"></span><span class="screen-reader-text">YouTube</span></p>
+                            <strong class="ribbon-wrapp resaltar-boton"><a href="https://www.youtube.com/user/coddica" class="ribbon">Suscribirse</a></strong>
+
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Liquid Slider Ends Here -->
+
+        </section>
+        <!-- section.contacto -->
+
+        <footer role="content-info" class="resaltar-menos">
+            <p class="contenedor">
+                <small>&copy; C&oacute;ddica 2013<br><br>Tel.: 8114896387<br>Email: <a href="mailto:hola@coddica.mx">hola@coddica.mx</a></small>
+            </p>
+        </footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
@@ -77,6 +216,22 @@
         <script src="js/helper.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+      <script type="text/javascript">
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+
 <!--
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
