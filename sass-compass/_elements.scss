@@ -22,7 +22,7 @@ border-bottom : 1px solid $white; }
 
 // img
 
-img {
+img{
 max-width : 100%;
 border-width : 0;
 vertical-align : middle;
@@ -31,6 +31,9 @@ vertical-align : middle;
 svg:not(:root) {
 overflow : hidden; }
 
+object{
+	max-width:100%;
+}
 // figure
 
 figure {

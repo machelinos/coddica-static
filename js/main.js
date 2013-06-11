@@ -16,7 +16,8 @@ $(document).ready(function(){
 
 $(window).load(function() {
     $('.flexslider').flexslider({
-    	controlNav: false
+    	controlNav: false,
+        smoothHeight: true
     });
   });
 

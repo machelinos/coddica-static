@@ -138,6 +138,7 @@ header{
 			@include breakpoint(junior){
 				width:35%;
 			}
+
 		} //a
 	} //h1
 }//header
@@ -255,6 +256,12 @@ header{
 		h1{
 			color:$black;
 			@include font-size(21);
+		}
+
+		span{
+			display:block;
+			width:90%;
+			margin:0 auto;
 		}
 
 	} //article
