@@ -423,12 +423,32 @@ table {
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-/* line 17, ../sass-compass/_site.scss */
+@-webkit-viewport {
+  width: device-width;
+}
+
+@-moz-viewport {
+  width: device-width;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@-o-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
+
+/* line 32, ../sass-compass/_site.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 25, ../sass-compass/_site.scss */
+/* line 40, ../sass-compass/_site.scss */
 html,
 button,
 input,
@@ -437,7 +457,7 @@ textarea {
   color: #222;
 }
 
-/* line 29, ../sass-compass/_site.scss */
+/* line 44, ../sass-compass/_site.scss */
 body {
   line-height: 1.2em;
 }
@@ -447,13 +467,13 @@ body {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-/* line 39, ../sass-compass/_site.scss */
+/* line 54, ../sass-compass/_site.scss */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-/* line 44, ../sass-compass/_site.scss */
+/* line 59, ../sass-compass/_site.scss */
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -462,7 +482,7 @@ body {
 /*
  * A better looking default horizontal rule
  */
-/* line 53, ../sass-compass/_site.scss */
+/* line 68, ../sass-compass/_site.scss */
 hr {
   display: block;
   height: 1px;
@@ -475,7 +495,7 @@ hr {
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
-/* line 66, ../sass-compass/_site.scss */
+/* line 81, ../sass-compass/_site.scss */
 img {
   vertical-align: middle;
 }
@@ -483,7 +503,7 @@ img {
 /*
  * Remove default fieldset styles.
  */
-/* line 74, ../sass-compass/_site.scss */
+/* line 89, ../sass-compass/_site.scss */
 fieldset {
   border: 0;
   margin: 0;
@@ -493,7 +513,7 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-/* line 84, ../sass-compass/_site.scss */
+/* line 99, ../sass-compass/_site.scss */
 textarea {
   resize: vertical;
 }
@@ -501,7 +521,7 @@ textarea {
 /* ==========================================================================
    Chrome Frame prompt
    ========================================================================== */
-/* line 92, ../sass-compass/_site.scss */
+/* line 107, ../sass-compass/_site.scss */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -518,7 +538,7 @@ textarea {
 /*
  * Image replacement
  */
-/* line 127, ../sass-compass/_site.scss */
+/* line 142, ../sass-compass/_site.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -527,7 +547,7 @@ textarea {
   *text-indent: -9999px;
 }
 
-/* line 135, ../sass-compass/_site.scss */
+/* line 150, ../sass-compass/_site.scss */
 .ir:before {
   content: "";
   display: block;
@@ -538,7 +558,7 @@ textarea {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 146, ../sass-compass/_site.scss */
+/* line 161, ../sass-compass/_site.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -547,7 +567,7 @@ textarea {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 155, ../sass-compass/_site.scss */
+/* line 170, ../sass-compass/_site.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -563,7 +583,7 @@ textarea {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 172, ../sass-compass/_site.scss */
+/* line 187, ../sass-compass/_site.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -577,7 +597,7 @@ textarea {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 185, ../sass-compass/_site.scss */
+/* line 200, ../sass-compass/_site.scss */
 .invisible {
   visibility: hidden;
 }
@@ -593,7 +613,7 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 202, ../sass-compass/_site.scss */
+/* line 217, ../sass-compass/_site.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -602,7 +622,7 @@ textarea {
   /* 2 */
 }
 
-/* line 207, ../sass-compass/_site.scss */
+/* line 222, ../sass-compass/_site.scss */
 .clearfix:after {
   clear: both;
 }
@@ -611,7 +631,7 @@ textarea {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 216, ../sass-compass/_site.scss */
+/* line 231, ../sass-compass/_site.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -632,7 +652,7 @@ textarea {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 243, ../sass-compass/_site.scss */
+  /* line 258, ../sass-compass/_site.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -641,18 +661,18 @@ textarea {
     text-shadow: none !important;
   }
 
-  /* line 251, ../sass-compass/_site.scss */
+  /* line 266, ../sass-compass/_site.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 255, ../sass-compass/_site.scss */
+  /* line 270, ../sass-compass/_site.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 259, ../sass-compass/_site.scss */
+  /* line 274, ../sass-compass/_site.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -660,33 +680,33 @@ textarea {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 269, ../sass-compass/_site.scss */
+  /* line 284, ../sass-compass/_site.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 274, ../sass-compass/_site.scss */
+  /* line 289, ../sass-compass/_site.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 279, ../sass-compass/_site.scss */
+  /* line 294, ../sass-compass/_site.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 284, ../sass-compass/_site.scss */
+  /* line 299, ../sass-compass/_site.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 288, ../sass-compass/_site.scss */
+  /* line 303, ../sass-compass/_site.scss */
   img {
     max-width: 100% !important;
   }
@@ -695,7 +715,7 @@ textarea {
     margin: 0.5cm;
 }
 
-  /* line 298, ../sass-compass/_site.scss */
+  /* line 313, ../sass-compass/_site.scss */
   p,
   h2,
   h3 {
@@ -703,7 +723,7 @@ textarea {
     widows: 3;
   }
 
-  /* line 304, ../sass-compass/_site.scss */
+  /* line 319, ../sass-compass/_site.scss */
   h2,
   h3 {
     page-break-after: avoid;
@@ -1799,7 +1819,13 @@ table tbody tr:hover th {
   width: 50%;
   float: left;
 }
-/* line 37, ../sass-compass/_plugins.scss */
+@media only screen and (min-width: 598px) {
+  /* line 31, ../sass-compass/_plugins.scss */
+  .flexnav li {
+    width: auto;
+  }
+}
+/* line 40, ../sass-compass/_plugins.scss */
 .flexnav li a {
   position: relative;
   display: block;
@@ -1812,44 +1838,44 @@ table tbody tr:hover th {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 48, ../sass-compass/_plugins.scss */
+/* line 51, ../sass-compass/_plugins.scss */
 .flexnav li a:hover {
   background: #009bd5;
   text-decoration: none;
 }
-/* line 54, ../sass-compass/_plugins.scss */
+/* line 57, ../sass-compass/_plugins.scss */
 .flexnav li.active a {
   background: #009bd5;
   text-decoration: none;
 }
-/* line 58, ../sass-compass/_plugins.scss */
+/* line 61, ../sass-compass/_plugins.scss */
 .flexnav li ul {
   width: 100%;
 }
-/* line 61, ../sass-compass/_plugins.scss */
+/* line 64, ../sass-compass/_plugins.scss */
 .flexnav li ul li {
   font-size: 100%;
   position: relative;
   overflow: hidden;
 }
-/* line 69, ../sass-compass/_plugins.scss */
+/* line 72, ../sass-compass/_plugins.scss */
 .flexnav li ul.show li {
   overflow: visible;
 }
-/* line 74, ../sass-compass/_plugins.scss */
+/* line 77, ../sass-compass/_plugins.scss */
 .flexnav li ul li a {
   display: block;
   background: #b2b2af;
 }
-/* line 78, ../sass-compass/_plugins.scss */
+/* line 81, ../sass-compass/_plugins.scss */
 .flexnav ul li ul li a {
   background: #bfbfbc;
 }
-/* line 81, ../sass-compass/_plugins.scss */
+/* line 84, ../sass-compass/_plugins.scss */
 .flexnav ul li ul li ul li a {
   background: #cbcbc9;
 }
-/* line 84, ../sass-compass/_plugins.scss */
+/* line 87, ../sass-compass/_plugins.scss */
 .flexnav .touch-button {
   position: absolute;
   z-index: 999;
@@ -1862,11 +1888,11 @@ table tbody tr:hover th {
   background: rgba(0, 0, 0, 0.075);
   text-align: center;
 }
-/* line 95, ../sass-compass/_plugins.scss */
+/* line 98, ../sass-compass/_plugins.scss */
 .flexnav .touch-button:hover {
   cursor: pointer;
 }
-/* line 98, ../sass-compass/_plugins.scss */
+/* line 101, ../sass-compass/_plugins.scss */
 .flexnav .touch-button .navicon {
   position: relative;
   top: 1.4em;
@@ -1874,7 +1900,7 @@ table tbody tr:hover th {
   color: #666;
 }
 
-/* line 106, ../sass-compass/_plugins.scss */
+/* line 109, ../sass-compass/_plugins.scss */
 .menu-button {
   position: absolute;
   display: block;
@@ -1883,19 +1909,19 @@ table tbody tr:hover th {
   top: 23px;
   left: 10px;
 }
-/* line 114, ../sass-compass/_plugins.scss */
+/* line 117, ../sass-compass/_plugins.scss */
 .menu-button span {
   font-size: 21px;
   font-size: 2.1rem;
 }
-/* line 119, ../sass-compass/_plugins.scss */
+/* line 122, ../sass-compass/_plugins.scss */
 .menu-button.one-page {
   position: fixed;
   top: 0;
   right: 5%;
   padding-right: 45px;
 }
-/* line 126, ../sass-compass/_plugins.scss */
+/* line 129, ../sass-compass/_plugins.scss */
 .menu-button .touch-button {
   display: none;
   background: transparent;
@@ -1909,94 +1935,115 @@ table tbody tr:hover th {
 }
 
 @media all and (min-width: 768px) {
-  /* line 141, ../sass-compass/_plugins.scss */
+  /* line 144, ../sass-compass/_plugins.scss */
   body.one-page {
     padding-top: 70px;
   }
 
-  /* line 144, ../sass-compass/_plugins.scss */
+  /* line 147, ../sass-compass/_plugins.scss */
   .flexnav {
     overflow: visible;
+    float: left;
+    margin: 15px 10px 0 10px;
+    background: transparent;
+    height: auto;
+    max-height: 100px;
   }
-  /* line 147, ../sass-compass/_plugins.scss */
+  /* line 155, ../sass-compass/_plugins.scss */
   .flexnav.one-page {
     top: 0;
     right: auto;
     max-width: 1080px;
   }
-  /* line 152, ../sass-compass/_plugins.scss */
+  /* line 160, ../sass-compass/_plugins.scss */
   .flexnav li {
     position: relative;
     list-style: none;
     float: left;
     display: block;
-    background-color: #a6a6a2;
-    width: 20%;
+    width: auto;
     overflow: visible;
   }
-  /* line 161, ../sass-compass/_plugins.scss */
-  .flexnav li a {
-    border-left: 1px solid #acaca1;
-    border-bottom: none;
+  /* line 168, ../sass-compass/_plugins.scss */
+  .flexnav li.active a {
+    border-bottom: 3px solid #00adef;
+    background: 0;
+    color: #00adef;
   }
-  /* line 165, ../sass-compass/_plugins.scss */
+  /* line 174, ../sass-compass/_plugins.scss */
+  .flexnav li a {
+    padding: 10px;
+    color: #555555;
+    margin-right: 10px;
+    -webkit-transition: border 0.1s ease-out, color 0.1s ease-out;
+    -moz-transition: border 0.1s ease-out, color 0.1s ease-out;
+    -o-transition: border 0.1s ease-out, color 0.1s ease-out;
+    transition: border 0.1s ease-out, color 0.1s ease-out;
+  }
+  /* line 179, ../sass-compass/_plugins.scss */
+  .flexnav li a:hover {
+    border-bottom: 3px solid #00adef;
+    background: none;
+    color: #00adef;
+  }
+  /* line 185, ../sass-compass/_plugins.scss */
   .flexnav li > ul {
     position: absolute;
     top: auto;
     left: 0;
     display: block;
   }
-  /* line 171, ../sass-compass/_plugins.scss */
+  /* line 191, ../sass-compass/_plugins.scss */
   .flexnav li > ul li {
     width: 100%;
   }
-  /* line 175, ../sass-compass/_plugins.scss */
+  /* line 195, ../sass-compass/_plugins.scss */
   .flexnav li ul li > ul {
     margin-left: 100%;
     top: 0;
   }
-  /* line 182, ../sass-compass/_plugins.scss */
+  /* line 202, ../sass-compass/_plugins.scss */
   .flexnav li ul li a {
     border-bottom: none;
   }
-  /* line 185, ../sass-compass/_plugins.scss */
+  /* line 205, ../sass-compass/_plugins.scss */
   .flexnav li ul.open {
     display: block;
     opacity: 1;
     visibility: visible;
     z-index: 1;
   }
-  /* line 191, ../sass-compass/_plugins.scss */
+  /* line 211, ../sass-compass/_plugins.scss */
   .flexnav li ul.open li {
     overflow: visible;
     max-height: 100px;
   }
-  /* line 195, ../sass-compass/_plugins.scss */
+  /* line 215, ../sass-compass/_plugins.scss */
   .flexnav li ul.open ul.open {
     margin-left: 100%;
     top: 0;
   }
 
-  /* line 201, ../sass-compass/_plugins.scss */
+  /* line 221, ../sass-compass/_plugins.scss */
   .menu-button {
     display: none;
   }
 }
-/* line 207, ../sass-compass/_plugins.scss */
+/* line 227, ../sass-compass/_plugins.scss */
 .oldie body.one-page {
   padding-top: 70px;
 }
-/* line 210, ../sass-compass/_plugins.scss */
+/* line 230, ../sass-compass/_plugins.scss */
 .oldie .flexnav {
   overflow: visible;
 }
-/* line 213, ../sass-compass/_plugins.scss */
+/* line 233, ../sass-compass/_plugins.scss */
 .oldie .flexnav.one-page {
   top: 0;
   right: auto;
   max-width: 1080px;
 }
-/* line 218, ../sass-compass/_plugins.scss */
+/* line 238, ../sass-compass/_plugins.scss */
 .oldie .flexnav li {
   position: relative;
   list-style: none;
@@ -2006,7 +2053,7 @@ table tbody tr:hover th {
   width: 20%;
   min-height: 50px;
 }
-/* line 227, ../sass-compass/_plugins.scss */
+/* line 247, ../sass-compass/_plugins.scss */
 .oldie .flexnav li:hover > ul {
   visibility: visible;
   opacity: 1;
@@ -2014,17 +2061,17 @@ table tbody tr:hover th {
   display: block;
   position: absolute;
 }
-/* line 234, ../sass-compass/_plugins.scss */
+/* line 254, ../sass-compass/_plugins.scss */
 .oldie .flexnav li:hover > ul li {
   width: 100%;
   float: none;
 }
-/* line 239, ../sass-compass/_plugins.scss */
+/* line 259, ../sass-compass/_plugins.scss */
 .oldie .flexnav li a {
   border-left: 1px solid #acaca1;
   border-bottom: none;
 }
-/* line 243, ../sass-compass/_plugins.scss */
+/* line 263, ../sass-compass/_plugins.scss */
 .oldie .flexnav li > ul {
   position: absolute;
   top: auto;
@@ -2034,36 +2081,36 @@ table tbody tr:hover th {
   height: 1px;
   z-index: 1;
 }
-/* line 252, ../sass-compass/_plugins.scss */
+/* line 272, ../sass-compass/_plugins.scss */
 .oldie .flexnav li ul li ul {
   top: 0;
 }
-/* line 255, ../sass-compass/_plugins.scss */
+/* line 275, ../sass-compass/_plugins.scss */
 .oldie .flexnav li ul li a {
   border-bottom: none;
 }
-/* line 258, ../sass-compass/_plugins.scss */
+/* line 278, ../sass-compass/_plugins.scss */
 .oldie .flexnav li ul.open {
   display: block;
   opacity: 1;
   visibility: visible;
   height: auto;
 }
-/* line 264, ../sass-compass/_plugins.scss */
+/* line 284, ../sass-compass/_plugins.scss */
 .oldie .flexnav li ul.open ul.open {
   margin-left: 100%;
   top: 0;
 }
-/* line 269, ../sass-compass/_plugins.scss */
+/* line 289, ../sass-compass/_plugins.scss */
 .oldie .flexnav ul li:hover ul {
   margin-left: 100%;
   top: 0;
 }
-/* line 274, ../sass-compass/_plugins.scss */
+/* line 294, ../sass-compass/_plugins.scss */
 .oldie .menu-button {
   display: none;
 }
-/* line 277, ../sass-compass/_plugins.scss */
+/* line 297, ../sass-compass/_plugins.scss */
 .oldie.ie7 .flexnav li {
   width: 19.9%;
 }
@@ -2079,7 +2126,7 @@ table tbody tr:hover th {
  * Contributing author: Tyler Smith (@mbmufffin)
  */
 /* Browser Resets */
-/* line 300, ../sass-compass/_plugins.scss */
+/* line 320, ../sass-compass/_plugins.scss */
 .flex-container a:active,
 .flexslider a:active,
 .flex-container a:focus,
@@ -2087,7 +2134,7 @@ table tbody tr:hover th {
   outline: none;
 }
 
-/* line 303, ../sass-compass/_plugins.scss */
+/* line 323, ../sass-compass/_plugins.scss */
 .slides,
 .flex-control-nav,
 .flex-direction-nav {
@@ -2098,32 +2145,32 @@ table tbody tr:hover th {
 
 /* FlexSlider Necessary Styles
 *********************************/
-/* line 307, ../sass-compass/_plugins.scss */
+/* line 327, ../sass-compass/_plugins.scss */
 .flexslider {
   margin: 0;
   padding: 0;
 }
 
-/* line 308, ../sass-compass/_plugins.scss */
+/* line 328, ../sass-compass/_plugins.scss */
 .flexslider .slides > li {
   display: none;
   -webkit-backface-visibility: hidden;
 }
 
 /* Hide the slides before the JS is loaded. Avoids image jumping */
-/* line 309, ../sass-compass/_plugins.scss */
+/* line 329, ../sass-compass/_plugins.scss */
 .flexslider .slides img {
   width: 100%;
   display: block;
 }
 
-/* line 310, ../sass-compass/_plugins.scss */
+/* line 330, ../sass-compass/_plugins.scss */
 .flex-pauseplay span {
   text-transform: capitalize;
 }
 
 /* Clearfix for the .slides element */
-/* line 313, ../sass-compass/_plugins.scss */
+/* line 333, ../sass-compass/_plugins.scss */
 .slides:after {
   content: ".";
   display: block;
@@ -2133,12 +2180,12 @@ table tbody tr:hover th {
   height: 0;
 }
 
-/* line 314, ../sass-compass/_plugins.scss */
+/* line 334, ../sass-compass/_plugins.scss */
 html[xmlns] .slides {
   display: block;
 }
 
-/* line 315, ../sass-compass/_plugins.scss */
+/* line 335, ../sass-compass/_plugins.scss */
 * html .slides {
   height: 1%;
 }
@@ -2146,21 +2193,21 @@ html[xmlns] .slides {
 /* No JavaScript Fallback */
 /* If you are not using another script, such as Modernizr, make sure you
  * include js that eliminates this class on page load */
-/* line 320, ../sass-compass/_plugins.scss */
+/* line 340, ../sass-compass/_plugins.scss */
 .no-js .slides > li:first-child {
   display: block;
 }
 
 /* FlexSlider Default Theme
 *********************************/
-/* line 325, ../sass-compass/_plugins.scss */
+/* line 345, ../sass-compass/_plugins.scss */
 .flexslider {
   margin: 0;
   position: relative;
   zoom: 1;
 }
 
-/* line 326, ../sass-compass/_plugins.scss */
+/* line 346, ../sass-compass/_plugins.scss */
 .flex-viewport {
   max-height: 2000px;
   -webkit-transition: all 1s ease;
@@ -2168,28 +2215,28 @@ html[xmlns] .slides {
   transition: all 1s ease;
 }
 
-/* line 327, ../sass-compass/_plugins.scss */
+/* line 347, ../sass-compass/_plugins.scss */
 .loading .flex-viewport {
   max-height: 300px;
 }
 
-/* line 328, ../sass-compass/_plugins.scss */
+/* line 348, ../sass-compass/_plugins.scss */
 .flexslider .slides {
   zoom: 1;
 }
 
-/* line 330, ../sass-compass/_plugins.scss */
+/* line 350, ../sass-compass/_plugins.scss */
 .carousel li {
   margin-right: 5px;
 }
 
 /* Direction Nav */
-/* line 334, ../sass-compass/_plugins.scss */
+/* line 354, ../sass-compass/_plugins.scss */
 .flex-direction-nav {
   *height: 0;
 }
 
-/* line 335, ../sass-compass/_plugins.scss */
+/* line 355, ../sass-compass/_plugins.scss */
 .flex-direction-nav a {
   width: 60px;
   height: 50px;
@@ -2203,33 +2250,33 @@ html[xmlns] .slides {
   -webkit-transition: all .3s ease;
 }
 
-/* line 337, ../sass-compass/_plugins.scss */
+/* line 357, ../sass-compass/_plugins.scss */
 .flex-direction-nav a.flex-next {
   background: url(../img/flecha-derecha.svg) no-repeat;
   right: 0;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
-/* line 342, ../sass-compass/_plugins.scss */
+/* line 362, ../sass-compass/_plugins.scss */
 .flex-direction-nav a.flex-next:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
-/* line 346, ../sass-compass/_plugins.scss */
+/* line 366, ../sass-compass/_plugins.scss */
 .flex-direction-nav a.flex-prev {
   background: url(../img/flecha-izquierda.svg) no-repeat;
   left: 0;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
-/* line 350, ../sass-compass/_plugins.scss */
+/* line 370, ../sass-compass/_plugins.scss */
 .flex-direction-nav a.flex-prev:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
-/* line 355, ../sass-compass/_plugins.scss */
+/* line 375, ../sass-compass/_plugins.scss */
 .flex-direction-nav .flex-disabled {
   opacity: .3!important;
   filter: alpha(opacity=30);
@@ -2237,7 +2284,7 @@ html[xmlns] .slides {
 }
 
 /* Control Nav */
-/* line 358, ../sass-compass/_plugins.scss */
+/* line 378, ../sass-compass/_plugins.scss */
 .flex-control-nav {
   width: 100%;
   position: absolute;
@@ -2245,7 +2292,7 @@ html[xmlns] .slides {
   text-align: center;
 }
 
-/* line 359, ../sass-compass/_plugins.scss */
+/* line 379, ../sass-compass/_plugins.scss */
 .flex-control-nav li {
   margin: 0 6px;
   display: inline-block;
@@ -2253,7 +2300,7 @@ html[xmlns] .slides {
   *display: inline;
 }
 
-/* line 360, ../sass-compass/_plugins.scss */
+/* line 380, ../sass-compass/_plugins.scss */
 .flex-control-paging li a {
   width: 11px;
   height: 11px;
@@ -2269,34 +2316,34 @@ html[xmlns] .slides {
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 361, ../sass-compass/_plugins.scss */
+/* line 381, ../sass-compass/_plugins.scss */
 .flex-control-paging li a:hover {
   background: #333;
   background: rgba(0, 0, 0, 0.7);
 }
 
-/* line 362, ../sass-compass/_plugins.scss */
+/* line 382, ../sass-compass/_plugins.scss */
 .flex-control-paging li a.flex-active {
   background: #000;
   background: rgba(0, 0, 0, 0.9);
   cursor: default;
 }
 
-/* line 364, ../sass-compass/_plugins.scss */
+/* line 384, ../sass-compass/_plugins.scss */
 .flex-control-thumbs {
   margin: 5px 0 0;
   position: static;
   overflow: hidden;
 }
 
-/* line 365, ../sass-compass/_plugins.scss */
+/* line 385, ../sass-compass/_plugins.scss */
 .flex-control-thumbs li {
   width: 25%;
   float: left;
   margin: 0;
 }
 
-/* line 366, ../sass-compass/_plugins.scss */
+/* line 386, ../sass-compass/_plugins.scss */
 .flex-control-thumbs img {
   width: 100%;
   display: block;
@@ -2304,25 +2351,25 @@ html[xmlns] .slides {
   cursor: pointer;
 }
 
-/* line 367, ../sass-compass/_plugins.scss */
+/* line 387, ../sass-compass/_plugins.scss */
 .flex-control-thumbs img:hover {
   opacity: 1;
 }
 
-/* line 368, ../sass-compass/_plugins.scss */
+/* line 388, ../sass-compass/_plugins.scss */
 .flex-control-thumbs .flex-active {
   opacity: 1;
   cursor: default;
 }
 
 @media screen and (max-width: 860px) {
-  /* line 371, ../sass-compass/_plugins.scss */
+  /* line 391, ../sass-compass/_plugins.scss */
   .flex-direction-nav .flex-prev {
     opacity: 1;
     left: 0;
   }
 
-  /* line 372, ../sass-compass/_plugins.scss */
+  /* line 392, ../sass-compass/_plugins.scss */
   .flex-direction-nav .flex-next {
     opacity: 1;
     right: 0;
@@ -2344,7 +2391,7 @@ html[xmlns] .slides {
 * and be sure to include the ".no-js" class in your html
 * markup.
 *******************************************************/
-/* line 393, ../sass-compass/_plugins.scss */
+/* line 413, ../sass-compass/_plugins.scss */
 .no-js .liquid-slider {
   height: 350px;
   overflow: scroll;
@@ -2356,7 +2403,7 @@ html[xmlns] .slides {
 * and be sure to include the ".no-js" class in your html
 * markup.
 *******************************************************/
-/* line 404, ../sass-compass/_plugins.scss */
+/* line 424, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .liquid-slider-preloader {
   background: url(../img/loading.gif) #00adef no-repeat center 75px;
   /* Do not edit below this line */
@@ -2377,7 +2424,7 @@ html[xmlns] .slides {
 *
 * Additional media queries are at the bottom of this document
 ******************************************************************/
-/* line 424, ../sass-compass/_plugins.scss */
+/* line 444, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper {
   margin: 0 auto;
   /* Do not edit below this line */
@@ -2396,7 +2443,7 @@ html[xmlns] .slides {
 * The responsive slider will interpret the width as the
 * max width instead
 *******************************************************/
-/* line 442, ../sass-compass/_plugins.scss */
+/* line 462, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .liquid-slider {
   background: #00adef;
   width: 1030px;
@@ -2406,13 +2453,13 @@ html[xmlns] .slides {
   position: relative;
 }
 
-/* line 450, ../sass-compass/_plugins.scss */
+/* line 470, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .panel-container {
   /* Do not edit below this line */
   position: relative;
 }
 
-/* line 455, ../sass-compass/_plugins.scss */
+/* line 475, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .liquid-slider .panel-container .fadeClass {
   /* Do not edit below this line */
   position: absolute;
@@ -2427,7 +2474,7 @@ html[xmlns] .slides {
 * responsive setting, this will act as the max-width
 * for the entire slider.
 *******************************************************/
-/* line 469, ../sass-compass/_plugins.scss */
+/* line 489, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .liquid-slider .panel {
   width: 1030px;
   /* Do not edit below this line */
@@ -2441,7 +2488,7 @@ html[xmlns] .slides {
 * based on the content you use. Use the @media queries
 * at the bottom of this file.
 *******************************************************/
-/* line 482, ../sass-compass/_plugins.scss */
+/* line 502, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .liquid-slider .panel img {
   /*
   width:100%;
@@ -2450,7 +2497,7 @@ html[xmlns] .slides {
   */
 }
 
-/* line 490, ../sass-compass/_plugins.scss */
+/* line 510, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .liquid-slider .panel video {
   /*
   width:100%;
@@ -2463,7 +2510,7 @@ html[xmlns] .slides {
 * panel. If you are using the responsive setting, you
 * need to use the settings below as this will not apply.
 *******************************************************/
-/* line 502, ../sass-compass/_plugins.scss */
+/* line 522, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .liquid-slider .panel-wrapper {
   padding: 20px;
   /* Do not edit below this line */
@@ -2483,7 +2530,7 @@ html[xmlns] .slides {
 *
 * .currentCrossLink refers to external crosslinking.
 *******************************************************/
-/* line 521, ../sass-compass/_plugins.scss */
+/* line 541, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .liquid-nav a {
   background: #d8d8d8;
   color: #333333;
@@ -2491,24 +2538,24 @@ html[xmlns] .slides {
   padding: 3px 6px;
 }
 
-/* line 527, ../sass-compass/_plugins.scss */
+/* line 547, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .liquid-nav a:hover {
   background: #f2f2f2;
   color: #333333;
   text-shadow: none;
 }
 
-/* line 532, ../sass-compass/_plugins.scss */
+/* line 552, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .liquid-nav .current {
   background: #f2f2f2;
 }
 
-/* line 535, ../sass-compass/_plugins.scss */
+/* line 555, ../sass-compass/_plugins.scss */
 .currentCrossLink {
   font-weight: bold;
 }
 
-/* line 538, ../sass-compass/_plugins.scss */
+/* line 558, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .liquid-nav ul {
   padding: 0;
   /* Do not edit below this line */
@@ -2518,13 +2565,13 @@ html[xmlns] .slides {
   overflow: hidden;
 }
 
-/* line 546, ../sass-compass/_plugins.scss */
+/* line 566, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .liquid-nav ul li {
   /* Do not edit below this line */
   display: inline;
 }
 
-/* line 550, ../sass-compass/_plugins.scss */
+/* line 570, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .liquid-nav ul li a {
   /* Do not edit below this line */
   display: block;
@@ -2538,13 +2585,13 @@ html[xmlns] .slides {
 * included a simple example to create a custom select
 * box.
 *******************************************************/
-/* line 563, ../sass-compass/_plugins.scss */
+/* line 583, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .liquid-nav {
   overflow: hidden;
   clear: both;
 }
 
-/* line 567, ../sass-compass/_plugins.scss */
+/* line 587, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .liquid-slider-select-box {
   /* Delete these if you want the standard select box.
      Also delete the rules below */
@@ -2554,7 +2601,7 @@ html[xmlns] .slides {
   background: url(../img/menu.png) no-repeat right #dddddd;
 }
 
-/* line 577, ../sass-compass/_plugins.scss */
+/* line 597, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .liquid-slider-select-box select {
   /* If you want the standard select box, use
   width:100%
@@ -2579,13 +2626,13 @@ html[xmlns] .slides {
 * Some settings will be overwritten when using the
 * responsive setting.
 *******************************************************/
-/* line 602, ../sass-compass/_plugins.scss */
+/* line 622, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .liquid-nav-left, .liquid-slider-wrapper .liquid-nav-right {
   /* Do not edit below this line */
   float: left;
 }
 
-/* line 606, ../sass-compass/_plugins.scss */
+/* line 626, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .liquid-nav-left a, .liquid-slider-wrapper .liquid-nav-right a {
   /* non-graphical arrows */
   background: #000;
@@ -2598,26 +2645,26 @@ html[xmlns] .slides {
   text-decoration: none;
 }
 
-/* line 617, ../sass-compass/_plugins.scss */
+/* line 637, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .liquid-nav-left-arrow, .liquid-slider-wrapper .liquid-nav-right-arrow {
   cursor: pointer;
   /* Do not edit below this line */
   float: left;
 }
 
-/* line 622, ../sass-compass/_plugins.scss */
+/* line 642, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .liquid-nav-left-arrow a, .liquid-slider-wrapper .liquid-nav-right-arrow a {
   /* Do not edit below this line */
   display: block;
 }
 
-/* line 626, ../sass-compass/_plugins.scss */
+/* line 646, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .liquid-nav-left, .liquid-slider-wrapper .liquid-nav-left-arrow {
   /* Do not edit below this line */
   clear: both;
 }
 
-/* line 630, ../sass-compass/_plugins.scss */
+/* line 650, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .liquid-nav-right-arrow {
   width: 25px;
   height: 25px;
@@ -2628,7 +2675,7 @@ html[xmlns] .slides {
   position: relative;
 }
 
-/* line 639, ../sass-compass/_plugins.scss */
+/* line 659, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .liquid-nav-left-arrow {
   width: 25px;
   height: 25px;
@@ -2639,29 +2686,29 @@ html[xmlns] .slides {
   position: relative;
 }
 
-/* line 648, ../sass-compass/_plugins.scss */
+/* line 668, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .liquid-nav-left-arrow:hover {
   /* Left graphical arrows hover */
   background: url(../img/arrow.png) no-repeat bottom left;
 }
 
-/* line 652, ../sass-compass/_plugins.scss */
+/* line 672, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .liquid-nav-left-arrow:active {
   /* Left graphical arrows click */
 }
 
-/* line 655, ../sass-compass/_plugins.scss */
+/* line 675, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .liquid-nav-right-arrow:hover {
   /* Right graphical arrows hover */
   background: url(../img/arrow.png) no-repeat bottom right;
 }
 
-/* line 659, ../sass-compass/_plugins.scss */
+/* line 679, ../sass-compass/_plugins.scss */
 .liquid-slider-wrapper .liquid-nav-right-arrow:active {
   /* Right graphical arrows click */
 }
 
-/* line 662, ../sass-compass/_plugins.scss */
+/* line 682, ../sass-compass/_plugins.scss */
 .arrows .liquid-slider {
   /* Margin between slider and arrows */
   margin: 0 10px;
@@ -2673,19 +2720,19 @@ html[xmlns] .slides {
 * covers the arrows, and most of the settings can be
 * applied above.
 *******************************************************/
-/* line 673, ../sass-compass/_plugins.scss */
+/* line 693, ../sass-compass/_plugins.scss */
 .liquid-responsive .liquid-slider {
   /* Do not edit below this line */
   width: 100%;
   margin: 0;
 }
 
-/* line 678, ../sass-compass/_plugins.scss */
+/* line 698, ../sass-compass/_plugins.scss */
 .liquid-responsive .liquid-slider .panel .panel-wrapper {
   padding: 10px;
 }
 
-/* line 681, ../sass-compass/_plugins.scss */
+/* line 701, ../sass-compass/_plugins.scss */
 .liquid-responsive .liquid-nav-left {
   /* Left non-graphical arrows */
   /* Do not edit below this line */
@@ -2694,20 +2741,20 @@ html[xmlns] .slides {
   z-index: 1;
 }
 
-/* line 688, ../sass-compass/_plugins.scss */
+/* line 708, ../sass-compass/_plugins.scss */
 .liquid-responsive .liquid-nav-left a {
   /* Left non-graphical arrows */
   background: #9A9A9A;
   width: 80px;
 }
 
-/* line 693, ../sass-compass/_plugins.scss */
+/* line 713, ../sass-compass/_plugins.scss */
 .liquid-responsive .liquid-nav-left a:hover {
   /* Left non-graphical hover */
   background: #747474;
 }
 
-/* line 697, ../sass-compass/_plugins.scss */
+/* line 717, ../sass-compass/_plugins.scss */
 .liquid-responsive .liquid-nav-right {
   /* Right non-graphical arrows */
   /* Do not edit below this line */
@@ -2716,20 +2763,20 @@ html[xmlns] .slides {
   z-index: 1;
 }
 
-/* line 704, ../sass-compass/_plugins.scss */
+/* line 724, ../sass-compass/_plugins.scss */
 .liquid-responsive .liquid-nav-right a {
   /* Right non-graphical arrows */
   background: #9A9A9A;
   width: 80px;
 }
 
-/* line 709, ../sass-compass/_plugins.scss */
+/* line 729, ../sass-compass/_plugins.scss */
 .liquid-responsive .liquid-nav-right a:hover {
   /* Right non-graphical arrows hover */
   background: #747474;
 }
 
-/* line 713, ../sass-compass/_plugins.scss */
+/* line 733, ../sass-compass/_plugins.scss */
 .liquid-responsive .liquid-nav-left-arrow {
   /* Do not edit below this line */
   position: absolute;
@@ -2737,7 +2784,7 @@ html[xmlns] .slides {
   z-index: 1;
 }
 
-/* line 719, ../sass-compass/_plugins.scss */
+/* line 739, ../sass-compass/_plugins.scss */
 .liquid-responsive .liquid-nav-right-arrow {
   /* Do not edit below this line */
   position: absolute;
@@ -2751,7 +2798,7 @@ html[xmlns] .slides {
 * larger than an iPhone but smaller than a tablet.
 ******************************************************************/
 @media only screen and (min-width: 481px) {
-  /* line 732, ../sass-compass/_plugins.scss */
+  /* line 752, ../sass-compass/_plugins.scss */
   .liquid-slider-wrapper .liquid-slider .panel img {
     /* Example */
     /*
@@ -2765,7 +2812,7 @@ html[xmlns] .slides {
 * This will include tablets and some netbooks.
 ******************************************************************/
 @media only screen and (min-width: 768px) {
-  /* line 747, ../sass-compass/_plugins.scss */
+  /* line 767, ../sass-compass/_plugins.scss */
   .liquid-slider-wrapper .liquid-slider .panel img {
     /* Example */
     /*
@@ -2773,7 +2820,7 @@ html[xmlns] .slides {
     */
   }
 
-  /* line 753, ../sass-compass/_plugins.scss */
+  /* line 773, ../sass-compass/_plugins.scss */
   .liquid-responsive .liquid-slider .panel .panel-wrapper {
     padding: 20px 35px;
   }
@@ -2856,10 +2903,10 @@ section h1, footer h1 {
   line-height: 18px;
   font-size: 21px;
   font-size: 2.1rem;
-  -webkit-transition: color, 0.05s, linear;
-  -moz-transition: color, 0.05s, linear;
-  -o-transition: color, 0.05s, linear;
-  transition: color, 0.05s, linear;
+  -webkit-transition: color 0.1s ease-out, background 0.1s ease-out;
+  -moz-transition: color 0.1s ease-out, background 0.1s ease-out;
+  -o-transition: color 0.1s ease-out, background 0.1s ease-out;
+  transition: color 0.1s ease-out, background 0.1s ease-out;
 }
 /* line 45, ../sass-compass/_page.scss */
 .resaltar-boton .ribbon {
@@ -2877,10 +2924,10 @@ section h1, footer h1 {
   display: block;
   bottom: 0;
   z-index: 1;
-  -webkit-transition: border, 0.05s, linear;
-  -moz-transition: border, 0.05s, linear;
-  -o-transition: border, 0.05s, linear;
-  transition: border, 0.05s, linear;
+  -webkit-transition: border 0.1s ease-out;
+  -moz-transition: border 0.1s ease-out;
+  -o-transition: border 0.1s ease-out;
+  transition: border 0.1s ease-out;
 }
 
 /* line 67, ../sass-compass/_page.scss */
@@ -2947,30 +2994,37 @@ header {
   border-bottom: 1px solid #d4d4d4;
   padding: 7px 0 13px 0;
 }
-/* line 129, ../sass-compass/_page.scss */
+@media only screen and (min-width: 760px) {
+  /* line 126, ../sass-compass/_page.scss */
+  header {
+    border-bottom: 0;
+  }
+}
+/* line 133, ../sass-compass/_page.scss */
 header h1 {
   text-align: center;
 }
-/* line 131, ../sass-compass/_page.scss */
+/* line 135, ../sass-compass/_page.scss */
 header h1 a {
   width: 55%;
   margin: 0 auto;
   display: block;
 }
 @media only screen and (min-width: 480px) {
-  /* line 131, ../sass-compass/_page.scss */
+  /* line 135, ../sass-compass/_page.scss */
   header h1 a {
     width: 45%;
   }
 }
-@media only screen and (min-width: 600px) {
-  /* line 131, ../sass-compass/_page.scss */
+@media only screen and (min-width: 760px) {
+  /* line 135, ../sass-compass/_page.scss */
   header h1 a {
-    width: 35%;
+    width: 31.81818181818182%;
+    float: left;
   }
 }
 
-/* line 146, ../sass-compass/_page.scss */
+/* line 151, ../sass-compass/_page.scss */
 .buscar-boton {
   position: absolute;
   display: block;
@@ -2978,29 +3032,53 @@ header h1 a {
   top: 23px;
   right: 10px;
 }
-/* line 152, ../sass-compass/_page.scss */
+/* line 157, ../sass-compass/_page.scss */
 .buscar-boton span {
   font-size: 21px;
   font-size: 2.1rem;
 }
+@media only screen and (min-width: 760px) {
+  /* line 151, ../sass-compass/_page.scss */
+  .buscar-boton {
+    display: none;
+  }
+}
 
-/* line 157, ../sass-compass/_page.scss */
+/* line 165, ../sass-compass/_page.scss */
 .busqueda {
   display: none;
   background: #00adef;
   padding: 10px 0;
 }
-/* line 161, ../sass-compass/_page.scss */
+@media only screen and (min-width: 760px) {
+  /* line 165, ../sass-compass/_page.scss */
+  .busqueda {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    padding: 0;
+    background: none;
+    width: 35%;
+  }
+}
+/* line 181, ../sass-compass/_page.scss */
 .busqueda form {
   position: relative;
 }
-/* line 164, ../sass-compass/_page.scss */
+@media only screen and (min-width: 760px) {
+  /* line 181, ../sass-compass/_page.scss */
+  .busqueda form {
+    border: 1px solid #888888;
+  }
+}
+/* line 187, ../sass-compass/_page.scss */
 .busqueda form input {
   margin-bottom: 0;
   border: 0;
   padding: 7px;
 }
-/* line 170, ../sass-compass/_page.scss */
+/* line 193, ../sass-compass/_page.scss */
 .busqueda form input[type="submit"] {
   border: 1px solid #555555;
   position: absolute;
@@ -3011,12 +3089,26 @@ header h1 a {
   background: #555555;
   color: white;
 }
+@media only screen and (min-width: 760px) {
+  /* line 193, ../sass-compass/_page.scss */
+  .busqueda form input[type="submit"] {
+    background: #00adef;
+    border: 0;
+  }
+  /* line 207, ../sass-compass/_page.scss */
+  .busqueda form input[type="submit"]:after {
+    content: "\e002";
+    font-family: "icomoon";
+    color: white;
+    background: #555555;
+  }
+}
 
-/* line 187, ../sass-compass/_page.scss */
+/* line 222, ../sass-compass/_page.scss */
 .intro {
   text-align: center;
 }
-/* line 189, ../sass-compass/_page.scss */
+/* line 224, ../sass-compass/_page.scss */
 .intro h1 {
   font-family: "MuseoSans100", Georgia, serif;
   font-size: 24px;
@@ -3025,51 +3117,82 @@ header h1 a {
   margin: 0 auto 25px auto;
 }
 @media only screen and (min-width: 480px) {
-  /* line 189, ../sass-compass/_page.scss */
+  /* line 224, ../sass-compass/_page.scss */
   .intro h1 {
     width: 70%;
   }
 }
-@media only screen and (min-width: 600px) {
-  /* line 189, ../sass-compass/_page.scss */
+@media only screen and (min-width: 598px) {
+  /* line 224, ../sass-compass/_page.scss */
   .intro h1 {
     width: 45%;
     float: right;
   }
 }
-@media only screen and (min-width: 600px) {
-  /* line 203, ../sass-compass/_page.scss */
-  .intro img {
-    width: 49%;
-    float: left;
+@media only screen and (min-width: 760px) {
+  /* line 224, ../sass-compass/_page.scss */
+  .intro h1 {
+    width: 40%;
+    float: right;
   }
 }
-/* line 210, ../sass-compass/_page.scss */
+@media only screen and (min-width: 598px) {
+  /* line 242, ../sass-compass/_page.scss */
+  .intro img {
+    width: 50%;
+    float: left;
+    margin-right: 5%;
+  }
+}
+@media only screen and (min-width: 760px) {
+  /* line 242, ../sass-compass/_page.scss */
+  .intro img {
+    width: 57%;
+    margin-right: 3%;
+  }
+}
+/* line 254, ../sass-compass/_page.scss */
 .intro p {
   font-family: "MuseoSans100", Georgia, serif;
   font-size: 21px;
   font-size: 2.1rem;
 }
-@media only screen and (min-width: 600px) {
-  /* line 210, ../sass-compass/_page.scss */
+@media only screen and (min-width: 598px) {
+  /* line 254, ../sass-compass/_page.scss */
   .intro p {
     margin-top: 195px;
   }
 }
-/* line 217, ../sass-compass/_page.scss */
+@media only screen and (min-width: 760px) {
+  /* line 261, ../sass-compass/_page.scss */
+  .intro p.conectamos {
+    float: right;
+    width: 40%;
+    margin-top: 0;
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+}
+/* line 270, ../sass-compass/_page.scss */
 .intro p.llamada-accion {
   font-family: "SegoeUI", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
 }
-@media only screen and (min-width: 600px) {
-  /* line 217, ../sass-compass/_page.scss */
+@media only screen and (min-width: 598px) {
+  /* line 270, ../sass-compass/_page.scss */
   .intro p.llamada-accion {
     margin-top: 15px;
   }
 }
+@media only screen and (min-width: 760px) {
+  /* line 270, ../sass-compass/_page.scss */
+  .intro p.llamada-accion {
+    margin-top: 270px;
+  }
+}
 
-/* line 228, ../sass-compass/_page.scss */
+/* line 284, ../sass-compass/_page.scss */
 .intro-em {
   color: #00adef;
   text-transform: uppercase;
@@ -3078,7 +3201,7 @@ header h1 a {
   font-size: 3rem;
 }
 
-/* line 235, ../sass-compass/_page.scss */
+/* line 291, ../sass-compass/_page.scss */
 .location:before {
   content: "\e009";
   font-family: "icomoon";
@@ -3087,48 +3210,73 @@ header h1 a {
   font-size: 2.1rem;
 }
 
-/* line 244, ../sass-compass/_page.scss */
+/* line 300, ../sass-compass/_page.scss */
 .resaltar {
   background: #00adef;
 }
-/* line 247, ../sass-compass/_page.scss */
+/* line 303, ../sass-compass/_page.scss */
 .resaltar h1, .resaltar p {
   color: white;
 }
 
-/* line 253, ../sass-compass/_page.scss */
+/* line 309, ../sass-compass/_page.scss */
 .proyectos-recientes article {
   text-align: center;
 }
-/* line 256, ../sass-compass/_page.scss */
+/* line 312, ../sass-compass/_page.scss */
 .proyectos-recientes article h1 {
   color: black;
   font-size: 21px;
   font-size: 2.1rem;
 }
-/* line 261, ../sass-compass/_page.scss */
+/* line 317, ../sass-compass/_page.scss */
 .proyectos-recientes article span {
   display: block;
   width: 90%;
   margin: 0 auto;
 }
+@media only screen and (min-width: 598px) {
+  /* line 317, ../sass-compass/_page.scss */
+  .proyectos-recientes article span {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 760px) {
+  /* line 317, ../sass-compass/_page.scss */
+  .proyectos-recientes article span {
+    width: 85%;
+  }
+}
 
-/* line 274, ../sass-compass/_page.scss */
+/* line 336, ../sass-compass/_page.scss */
 .servicios ul {
   list-style-type: none;
   color: #555555;
+  position: relative;
 }
-/* line 279, ../sass-compass/_page.scss */
+/* line 342, ../sass-compass/_page.scss */
 .servicios li {
   min-height: 70px;
   padding: 30px 10px;
   border-bottom: 1px solid #a2a2a2;
 }
-/* line 283, ../sass-compass/_page.scss */
+/* line 346, ../sass-compass/_page.scss */
 .servicios li:last-child {
   border: 0;
 }
-/* line 288, ../sass-compass/_page.scss */
+@media only screen and (min-width: 760px) {
+  /* line 342, ../sass-compass/_page.scss */
+  .servicios li {
+    width: 33%;
+    float: left;
+    border-bottom: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
+/* line 359, ../sass-compass/_page.scss */
 .servicios li:before {
   content: " ";
   font-family: "icomoon";
@@ -3142,64 +3290,124 @@ header h1 a {
   margin-right: 10px;
   font-size: 30px;
   font-size: 3rem;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  border-radius: 40px;
 }
-/* line 304, ../sass-compass/_page.scss */
+@media only screen and (min-width: 760px) {
+  /* line 359, ../sass-compass/_page.scss */
+  .servicios li:before {
+    float: none;
+    margin: 10px auto;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    border: 3px solid;
+    font-size: 40px;
+    font-size: 4rem;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+  }
+}
+/* line 385, ../sass-compass/_page.scss */
 .servicios li:first-child, .servicios li:last-child {
   padding-top: 50px;
   padding-bottom: 10px;
 }
-/* line 307, ../sass-compass/_page.scss */
+@media only screen and (min-width: 760px) {
+  /* line 385, ../sass-compass/_page.scss */
+  .servicios li:first-child, .servicios li:last-child {
+    padding: 15px 0;
+  }
+}
+/* line 392, ../sass-compass/_page.scss */
 .servicios li:first-child:before, .servicios li:last-child:before {
   margin-top: -20px;
 }
-/* line 312, ../sass-compass/_page.scss */
+/* line 399, ../sass-compass/_page.scss */
 .servicios li:first-child:before {
   content: "\e004";
 }
-/* line 316, ../sass-compass/_page.scss */
+/* line 403, ../sass-compass/_page.scss */
+.servicios li:last-child:before {
+  content: "\e000";
+}
+/* line 407, ../sass-compass/_page.scss */
 .servicios li:nth-child(2) {
   padding-top: 50px;
   padding-bottom: 10px;
 }
-/* line 320, ../sass-compass/_page.scss */
+@media only screen and (min-width: 760px) {
+  /* line 407, ../sass-compass/_page.scss */
+  .servicios li:nth-child(2) {
+    padding: 15px 0;
+  }
+}
+/* line 414, ../sass-compass/_page.scss */
 .servicios li:nth-child(2):before {
   content: "\e006";
   margin-top: -20px;
 }
-/* line 328, ../sass-compass/_page.scss */
+@media only screen and (min-width: 760px) {
+  /* line 421, ../sass-compass/_page.scss */
+  .servicios li:nth-child(3) {
+    padding: 15px 0;
+  }
+}
+/* line 426, ../sass-compass/_page.scss */
 .servicios li:nth-child(3):before {
   content: "\e00f";
 }
-/* line 333, ../sass-compass/_page.scss */
+@media only screen and (min-width: 760px) {
+  /* line 426, ../sass-compass/_page.scss */
+  .servicios li:nth-child(3):before {
+    margin-top: -20px;
+  }
+}
+/* line 434, ../sass-compass/_page.scss */
 .servicios li:nth-child(4) {
   padding-top: 50px;
   padding-bottom: 10px;
 }
-/* line 337, ../sass-compass/_page.scss */
+@media only screen and (min-width: 760px) {
+  /* line 434, ../sass-compass/_page.scss */
+  .servicios li:nth-child(4) {
+    padding: 15px 0;
+    width: 60%;
+    padding: 15px 100px;
+  }
+}
+/* line 443, ../sass-compass/_page.scss */
 .servicios li:nth-child(4):before {
   content: "\e002";
   margin-top: -20px;
 }
-/* line 343, ../sass-compass/_page.scss */
-.servicios li:nth-child(5):before {
-  content: "\e000";
+@media only screen and (min-width: 760px) {
+  /* line 449, ../sass-compass/_page.scss */
+  .servicios li:last-child {
+    width: 50%;
+    padding: 15px 50px;
+    position: absolute;
+    bottom: 19px;
+    right: 10%;
+  }
 }
 
-/* line 351, ../sass-compass/_page.scss */
+/* line 464, ../sass-compass/_page.scss */
 .resaltar-poco {
   background: #ededed;
 }
 
-/* line 355, ../sass-compass/_page.scss */
+/* line 468, ../sass-compass/_page.scss */
 .proceso {
   text-align: center;
 }
-/* line 358, ../sass-compass/_page.scss */
+/* line 471, ../sass-compass/_page.scss */
 .proceso p {
   font-family: "MuseoSans300", Georgia, serif;
   font-size: 21px;
@@ -3207,154 +3415,233 @@ header h1 a {
   margin-bottom: 0;
 }
 
-/* line 366, ../sass-compass/_page.scss */
+/* line 479, ../sass-compass/_page.scss */
 .contacto {
   padding-bottom: 0;
 }
-/* line 369, ../sass-compass/_page.scss */
+/* line 482, ../sass-compass/_page.scss */
 .contacto .contenedor {
   margin-bottom: 0.65em;
 }
-/* line 373, ../sass-compass/_page.scss */
+/* line 486, ../sass-compass/_page.scss */
 .contacto .panel {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
 }
-/* line 378, ../sass-compass/_page.scss */
+/* line 491, ../sass-compass/_page.scss */
 .contacto .liquidslider {
   background: #00adef;
 }
-/* line 382, ../sass-compass/_page.scss */
+/* line 495, ../sass-compass/_page.scss */
+.contacto .liquid-slider {
+  padding-bottom: 15px;
+}
+/* line 498, ../sass-compass/_page.scss */
 .contacto form {
   margin: 15px 0;
   text-align: right;
 }
-/* line 387, ../sass-compass/_page.scss */
+/* line 503, ../sass-compass/_page.scss */
 .contacto input, .contacto textarea {
   border: 0;
   padding: 15px;
   margin-bottom: 15px;
 }
-/* line 393, ../sass-compass/_page.scss */
+/* line 509, ../sass-compass/_page.scss */
 .contacto .ribbon {
   margin-right: 30px;
 }
-/* line 397, ../sass-compass/_page.scss */
+/* line 513, ../sass-compass/_page.scss */
 .contacto textarea {
   height: 150px;
   resize: none;
 }
 
-/* line 403, ../sass-compass/_page.scss */
+/* line 519, ../sass-compass/_page.scss */
 .liquid-nav {
   margin: 0 10px;
   text-align: center;
 }
-/* line 407, ../sass-compass/_page.scss */
+/* line 523, ../sass-compass/_page.scss */
 .liquid-nav ul {
   width: 280px;
   margin: 0 auto;
   float: none !important;
 }
 @media only screen and (min-width: 480px) {
-  /* line 407, ../sass-compass/_page.scss */
+  /* line 523, ../sass-compass/_page.scss */
   .liquid-nav ul {
     width: 460px;
   }
 }
-/* line 415, ../sass-compass/_page.scss */
+@media only screen and (min-width: 598px) {
+  /* line 523, ../sass-compass/_page.scss */
+  .liquid-nav ul {
+    width: 578px;
+  }
+}
+/* line 534, ../sass-compass/_page.scss */
 .liquid-slider-wrapper .liquid-nav ul {
   padding-bottom: 30px;
 }
-/* line 420, ../sass-compass/_page.scss */
+/* line 539, ../sass-compass/_page.scss */
 .liquid-slider-wrapper .liquid-nav ul li {
   display: inline-block;
   margin-right: 1px;
 }
 @media only screen and (min-width: 480px) {
-  /* line 420, ../sass-compass/_page.scss */
+  /* line 539, ../sass-compass/_page.scss */
   .liquid-slider-wrapper .liquid-nav ul li {
     margin-right: 5px;
   }
 }
-/* line 433, ../sass-compass/_page.scss */
+@media only screen and (min-width: 598px) {
+  /* line 539, ../sass-compass/_page.scss */
+  .liquid-slider-wrapper .liquid-nav ul li {
+    margin-right: 10px;
+  }
+}
+/* line 555, ../sass-compass/_page.scss */
 .liquid-nav li a {
   display: inline-block;
   font-family: 'icomoon';
   width: 50px;
   height: 50px;
   line-height: 50px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+  -webkit-transition: background 0.1s ease-out;
+  -moz-transition: background 0.1s ease-out;
+  -o-transition: background 0.1s ease-out;
+  transition: background 0.1s ease-out;
 }
 @media only screen and (min-width: 480px) {
-  /* line 433, ../sass-compass/_page.scss */
+  /* line 555, ../sass-compass/_page.scss */
   .liquid-nav li a {
     width: 60px;
     height: 60px;
     line-height: 60px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
   }
 }
-/* line 446, ../sass-compass/_page.scss */
+@media only screen and (min-width: 598px) {
+  /* line 555, ../sass-compass/_page.scss */
+  .liquid-nav li a {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -ms-border-radius: 45px;
+    -o-border-radius: 45px;
+    border-radius: 45px;
+  }
+}
+@media only screen and (min-width: 760px) {
+  /* line 555, ../sass-compass/_page.scss */
+  .liquid-nav li a {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    -webkit-border-radius: 70px;
+    -moz-border-radius: 70px;
+    -ms-border-radius: 70px;
+    -o-border-radius: 70px;
+    border-radius: 70px;
+  }
+}
+/* line 582, ../sass-compass/_page.scss */
 .liquid-nav li a:before {
   color: white;
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 451, ../sass-compass/_page.scss */
+@media only screen and (min-width: 598px) {
+  /* line 582, ../sass-compass/_page.scss */
+  .liquid-nav li a:before {
+    font-size: 21px;
+    font-size: 2.1rem;
+  }
+}
+@media only screen and (min-width: 760px) {
+  /* line 582, ../sass-compass/_page.scss */
+  .liquid-nav li a:before {
+    font-size: 24px;
+    font-size: 2.4rem;
+  }
+}
+/* line 593, ../sass-compass/_page.scss */
 .liquid-slider-wrapper .liquid-nav li a {
   background: #ff4d4d;
   padding: 2px;
 }
-/* line 455, ../sass-compass/_page.scss */
+/* line 597, ../sass-compass/_page.scss */
 .liquid-slider-wrapper .liquid-nav li a.current, .liquid-slider-wrapper .liquid-nav li a:hover {
   background: #00adef;
 }
-/* line 459, ../sass-compass/_page.scss */
+/* line 601, ../sass-compass/_page.scss */
 .liquid-slider-wrapper .liquid-nav li a.current {
   background: #00adef;
   position: relative;
   overflow: visible;
 }
-/* line 463, ../sass-compass/_page.scss */
+/* line 605, ../sass-compass/_page.scss */
 .liquid-slider-wrapper .liquid-nav li a.current:after {
   content: url(../img/senalador-abajo.svg);
   position: absolute;
   bottom: -68px;
   left: 0;
 }
-/* line 475, ../sass-compass/_page.scss */
+@media only screen and (min-width: 598px) {
+  /* line 605, ../sass-compass/_page.scss */
+  .liquid-slider-wrapper .liquid-nav li a.current:after {
+    bottom: -75px;
+    left: 12px;
+  }
+}
+@media only screen and (min-width: 760px) {
+  /* line 605, ../sass-compass/_page.scss */
+  .liquid-slider-wrapper .liquid-nav li a.current:after {
+    bottom: -87px;
+    left: 25px;
+  }
+}
+/* line 626, ../sass-compass/_page.scss */
 .liquid-nav li:first-child a:before {
   content: '\e008';
 }
-/* line 479, ../sass-compass/_page.scss */
+/* line 630, ../sass-compass/_page.scss */
 .liquid-nav li:nth-child(2) a:before {
   content: '\e005';
 }
-/* line 483, ../sass-compass/_page.scss */
+/* line 634, ../sass-compass/_page.scss */
 .liquid-nav li:nth-child(3) a:before {
   content: '\e00d';
 }
-/* line 487, ../sass-compass/_page.scss */
+/* line 638, ../sass-compass/_page.scss */
 .liquid-nav li:nth-child(4) a:before {
   content: '\e00a';
 }
-/* line 491, ../sass-compass/_page.scss */
+/* line 642, ../sass-compass/_page.scss */
 .liquid-nav li:nth-child(5) a:before {
   content: '\e003';
 }
 
-/* line 499, ../sass-compass/_page.scss */
+/* line 650, ../sass-compass/_page.scss */
 .contenedor-fb, .contenedor-gplus, .contenedor-yt {
   background: white;
 }
 
-/* line 503, ../sass-compass/_page.scss */
+/* line 654, ../sass-compass/_page.scss */
 .contenedor-gplus {
   width: 95%;
   margin: 0 auto;
@@ -3363,43 +3650,43 @@ header h1 a {
   padding-top: 15px;
 }
 
-/* line 512, ../sass-compass/_page.scss */
+/* line 663, ../sass-compass/_page.scss */
 .contenedor-yt {
   padding: 15px 5%;
   text-align: center;
 }
-/* line 516, ../sass-compass/_page.scss */
+/* line 667, ../sass-compass/_page.scss */
 .contenedor-yt .yt-boton {
   font-size: 36px;
   font-size: 3.6rem;
   color: #ff4d4d;
 }
-/* line 521, ../sass-compass/_page.scss */
+/* line 672, ../sass-compass/_page.scss */
 .contenedor-yt .ribbon {
   margin-right: 0;
 }
 
-/* line 526, ../sass-compass/_page.scss */
+/* line 677, ../sass-compass/_page.scss */
 .twitter-timeline {
   width: 100% !important;
 }
 
-/* line 532, ../sass-compass/_page.scss */
+/* line 683, ../sass-compass/_page.scss */
 .resaltar-menos {
   background: #444444;
   color: white;
 }
 
-/* line 538, ../sass-compass/_page.scss */
+/* line 689, ../sass-compass/_page.scss */
 footer p {
   text-align: center;
 }
-/* line 541, ../sass-compass/_page.scss */
+/* line 692, ../sass-compass/_page.scss */
 footer a {
   color: #ff4d4d;
 }
 
-/* line 546, ../sass-compass/_page.scss */
+/* line 697, ../sass-compass/_page.scss */
 small {
   text-align: center;
   font-size: 14px;

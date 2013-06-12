@@ -40,7 +40,7 @@ section, footer{
 	margin: 15px 0;
 	line-height: 18px;
 	@include font-size(21);
-	@include transition(color, 0.05s, linear);
+	@include transition(color 0.1s ease-out, background 0.1s ease-out);
 
 	.resaltar-boton &{
 		background:$brightcolor;
@@ -61,7 +61,7 @@ section, footer{
 	display: block;
 	bottom: 0;
 	z-index: 1;
-	@include transition(border, 0.05s, linear);
+	@include single-transition(border, 0.1s, ease-out);
 }
 
 .ribbon:before {
@@ -126,6 +126,10 @@ section, footer{
 header{
 	border-bottom:1px solid lighten($textcolor,50%);
 	padding:7px 0 13px 0;
+	@include breakpoint(senior){
+		border-bottom:0;
+	}
+
 	h1{
 		text-align:center;
 		a{
@@ -135,8 +139,9 @@ header{
 			@include breakpoint(intern){
 				width:45%;
 			}
-			@include breakpoint(junior){
-				width:35%;
+			@include breakpoint(senior){
+				width:31.81818181818182%;
+				float:left;
 			}
 
 		} //a
@@ -152,14 +157,32 @@ header{
 	span{
 		@include font-size(21);
 	} //span
+	@include breakpoint(senior){
+		display:none;
+	}
 } //.buscar-boton
 
 .busqueda{
 	display:none;
 	background:$lightcolor;
 	padding:10px 0;
+
+	@include breakpoint(senior){
+		display:block;
+		position:absolute;
+		top:20px;
+		right:10px;
+		padding:0;
+		background:none;
+		width:35%;
+	}
+
+
 	form{
 		position:relative;
+		@include breakpoint(senior){
+			border: 1px solid lighten($textcolor,20%);
+		}
 
 		input{
 			margin-bottom:0;
@@ -176,6 +199,18 @@ header{
 			padding-right:10px;
 			background:$textcolor;
 			color:$white;
+
+			@include breakpoint(senior){
+				background:$lightcolor;
+				border:0;
+
+				&:after{
+					content:"\e002";
+					font-family:"icomoon";
+					color:$white;
+					background:$textcolor;
+				}
+			}
 		}
 
 	} //form
@@ -198,12 +233,21 @@ header{
 			width:45%;
 			float:right;
 		}
+		@include breakpoint(senior){
+			width:40%;
+			float:right;
+		}
 	} //h1
 
 	img{
 		@include breakpoint(junior){
-			width:49%;
+			width:50%;
 			float:left;
+			margin-right:5%;
+		}
+		@include breakpoint(senior){
+			width:57%;
+			margin-right:3%;
 		}
 	}
 
@@ -214,11 +258,23 @@ header{
 			margin-top:195px;
 		}
 
+		&.conectamos{
+			@include breakpoint(senior){
+				float:right;
+				width:40%;
+				margin-top:0;
+				@include font-size(18);
+			}
+		}
+
 		&.llamada-accion{
 			font-family:$basefont;
 			@include font-size(16);
 			@include breakpoint(junior){
 				margin-top:15px;
+			}
+			@include breakpoint(senior){
+				margin-top:270px;
 			}
 		} //.llamada-accion
 	} //p
@@ -262,6 +318,12 @@ header{
 			display:block;
 			width:90%;
 			margin:0 auto;
+			@include breakpoint(junior){
+				width:75%;
+			}
+			@include breakpoint(senior){
+				width:85%;
+			}
 		}
 
 	} //article
@@ -274,6 +336,7 @@ header{
 	ul{
 		list-style-type:none;
 		color: $textcolor;
+		position:relative;
 	}
 
 	li{
@@ -282,6 +345,14 @@ header{
 		border-bottom:1px solid lighten($textcolor,30%);
 		&:last-child{
 			border:0;
+		}
+
+		@include breakpoint(senior){
+			width:33%;
+			float:left;
+			border-bottom:0;
+			@include box-sizing(border-box);
+			text-align:center;
 		}
 	}
 
@@ -297,25 +368,48 @@ header{
 		text-align:center;
 		margin-right:10px;
 		@include font-size(30);
-		@include border-radius(50%);
+		@include border-radius(40px);
+		@include breakpoint(senior){
+			float:none;
+			margin:10px auto;
+			width:90px;
+			height:90px;
+			line-height:90px;
+			border: 3px solid;
+			@include font-size(40);
+			@include border-radius(50px);
+		}
 	}
 
 	li{
 		&:first-child, &:last-child{
 			padding-top:50px;
 			padding-bottom:10px;
+			@include breakpoint(senior){
+				padding:15px 0;
+			}
+
 			&:before{
 				margin-top:-20px;
 			}
+
+
 		}
 
 		&:first-child:before{
 			content:"\e004";
 		}
 
+		&:last-child:before{
+			content:"\e000";
+		}
+
 		&:nth-child(2){
 			padding-top:50px;
 			padding-bottom:10px;
+			@include breakpoint(senior){
+				padding:15px 0;
+			}
 
 			&:before{
 				content:"\e006";
@@ -325,14 +419,26 @@ header{
 		}
 
 		&:nth-child(3){
+			@include breakpoint(senior){
+				padding:15px 0;
+			}
+
 			&:before{
 				content:"\e00f";
+				@include breakpoint(senior){
+					margin-top:-20px;
+				}
 			}
 		}
 
 		&:nth-child(4){
 			padding-top:50px;
 			padding-bottom:10px;
+			@include breakpoint(senior){
+				padding:15px 0;
+				width:60%;
+				padding:15px 100px;
+			}
 
 			&:before{
 				content:"\e002";
@@ -340,9 +446,16 @@ header{
 			}
 		}
 
-		&:nth-child(5):before{
-			content:"\e000";
+		&:last-child{
+			@include breakpoint(senior){
+				width:50%;
+				padding:15px 50px;
+				position:absolute;
+				bottom:19px;
+				right:10%;
+			}
 		}
+
 	} //li
 
 } //servicios
@@ -379,6 +492,9 @@ header{
 		background:$lightcolor;
 	}
 
+	.liquid-slider{
+		padding-bottom:15px;
+	}
 	form{
 		margin:15px 0;
 		text-align:right;
@@ -411,6 +527,9 @@ header{
 		@include breakpoint(intern){
 			width:460px;
 		}
+		@include breakpoint(junior){
+			width:578px;
+		}
 
 		.liquid-slider-wrapper &{
 			padding-bottom:30px;
@@ -422,6 +541,9 @@ header{
 				margin-right:1px;
 				@include breakpoint(intern){
 					margin-right:5px;
+				}
+				@include breakpoint(junior){
+					margin-right:10px;
 				}
 
 			}
@@ -436,16 +558,36 @@ header{
 			width:50px;
 			height:50px;
 			line-height:50px;
-			@include border-radius(50%);
+			@include border-radius(25px);
+			@include single-transition(background, 0.1s,ease-out);
 			@include breakpoint(intern){
 				width:60px;
 				height:60px;
 				line-height:60px;
+				@include border-radius(30px);
+			}
+			@include breakpoint(junior){
+				width:75px;
+				height:75px;
+				line-height:75px;
+				@include border-radius(45px);
+			}
+			@include breakpoint(senior){
+				width:100px;
+				height:100px;
+				line-height:100px;
+				@include border-radius(70px);
 			}
 
 			&:before{
 				color:$white;
 				@include font-size(18);
+				@include breakpoint(junior){
+					@include font-size(21);
+				}
+				@include breakpoint(senior){
+					@include font-size(24);
+				}
 			}
 
 			.liquid-slider-wrapper &{
@@ -465,6 +607,15 @@ header{
 						position:absolute;
 						bottom:-68px;
 						left:0;
+
+						@include breakpoint(junior){
+							bottom:-75px;
+							left:12px;
+						}
+						@include breakpoint(senior){
+							bottom:-87px;
+							left:25px;
+						}
 					}
 
 				}

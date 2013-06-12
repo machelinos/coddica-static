@@ -33,6 +33,9 @@ $fourth_level: #cbcbc9;
 		overflow: hidden;
 		width:50%;
 		float:left;
+		@include breakpoint(junior){
+			width:auto;
+		}
 	}
 	li a {
 		position: relative;
@@ -143,6 +146,11 @@ $fourth_level: #cbcbc9;
 	}
 	.flexnav {
 		overflow: visible;
+		float:left;
+		margin:15px 10px 0 10px;
+		background:transparent;
+		height:auto;
+		max-height:100px;
 
 		&.one-page {
 			top: 0;
@@ -154,13 +162,25 @@ $fourth_level: #cbcbc9;
 			list-style: none;
 			float: left;
 			display: block;
-			background-color: #a6a6a2;
-			width: 20%;
+			width: auto;
 			overflow: visible;
+
+			&.active a{
+				border-bottom: 3px solid $lightcolor;
+				background:0;
+				color: $lightcolor;
+			}
 		}
 		li a {
-			border-left: 1px solid #acaca1;
-			border-bottom: none;
+			padding:10px;
+			color:$textcolor;
+			margin-right:10px;
+			@include transition(border 0.1s ease-out, color 0.1s ease-out);
+			&:hover{
+				border-bottom: 3px solid $lightcolor;
+				background:none;
+				color:$lightcolor;
+			}
 		}
 		li > ul {
 			position: absolute;
