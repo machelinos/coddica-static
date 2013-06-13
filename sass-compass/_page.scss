@@ -172,14 +172,15 @@ header{
 		position:absolute;
 		top:20px;
 		right:10px;
-		padding:0;
-		background:none;
+		padding:5px 0;
+		background:transparent;
 		width:35%;
 	}
 
 
 	form{
 		position:relative;
+		overflow:visible;
 		@include breakpoint(senior){
 			border: 1px solid lighten($textcolor,20%);
 		}
@@ -558,7 +559,7 @@ header{
 			width:50px;
 			height:50px;
 			line-height:50px;
-			@include border-radius(25px);
+			@include border-radius(35px);
 			@include single-transition(background, 0.1s,ease-out);
 			@include breakpoint(intern){
 				width:60px;
