@@ -51,9 +51,11 @@
     if ($nav.data('breakpoint')) {
       breakpoint = $nav.data('breakpoint');
     }
+
     resizer = function() {
       if ($(window).width() <= breakpoint) {
         $nav.removeClass("lg-screen").addClass("sm-screen");
+
         $('.one-page li a').on('click', function() {
           return $nav.removeClass('show');
         });
