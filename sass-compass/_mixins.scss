@@ -163,7 +163,7 @@ overflow: visible; } } }
 	}
   }
   @else if $point == director {
-	@media only screen and (min-width: 960px) {
+	@media only screen and (min-width: 1000px) {
 		@content;
 	}
   }

@@ -1,6 +1,18 @@
 // GENERAL ==========================================================
 .contenedor{
 	margin:0 10px;
+	@include breakpoint(director){
+		width:1000px;
+		margin:0 auto;
+	}
+}
+
+.contenedor-general{
+	@include breakpoint(director){
+		width:1000px;
+		margin:0 auto;
+		position:relative;
+	}
 }
 
 .screen-reader-text{
@@ -143,6 +155,10 @@ header{
 				width:31.81818181818182%;
 				float:left;
 			}
+			@include breakpoint(director){
+				width:23.8%;
+				margin-top:40px;
+			}
 
 		} //a
 	} //h1
@@ -166,6 +182,8 @@ header{
 	display:none;
 	background:$lightcolor;
 	padding:10px 0;
+	overflow:visible;
+
 
 	@include breakpoint(senior){
 		display:block;
@@ -176,11 +194,20 @@ header{
 		background:transparent;
 		width:35%;
 	}
+	@include breakpoint(director){
+		top:-95px;
+		width:29%;
+	}
 
 
 	form{
 		position:relative;
 		overflow:visible;
+
+		&.contenedor{
+			width:auto;
+		}
+
 		@include breakpoint(senior){
 			border: 1px solid lighten($textcolor,20%);
 		}
@@ -189,6 +216,9 @@ header{
 			margin-bottom:0;
 			border:0;
 			padding:7px;
+			@include breakpoint(director){
+				padding:5px;
+			}
 		}
 
 		input[type="submit"]{
@@ -218,6 +248,14 @@ header{
 
 } //busqueda
 
+nav{
+	@include breakpoint(director){
+		position:absolute;
+		right:0;
+		top:-60px;
+	}
+}
+
 
 // SECTION INTRO ===========================================================
 .intro{
@@ -238,6 +276,11 @@ header{
 			width:40%;
 			float:right;
 		}
+		@include breakpoint(director){
+			width:35%;
+			margin:0 7.5% 25px 7.5%;
+			@include font-size(28);
+		}
 	} //h1
 
 	img{
@@ -250,6 +293,11 @@ header{
 			width:57%;
 			margin-right:3%;
 		}
+		@include breakpoint(director){
+			width:45%;
+			margin-right:5%;
+		}
+
 	}
 
 	p{
@@ -266,7 +314,13 @@ header{
 				margin-top:0;
 				@include font-size(18);
 			}
+
+			@include breakpoint(director){
+				width:50%;
+				@include font-size(21);
+			}
 		}
+
 
 		&.llamada-accion{
 			font-family:$basefont;
@@ -276,6 +330,11 @@ header{
 			}
 			@include breakpoint(senior){
 				margin-top:270px;
+			}
+
+			@include breakpoint(director){
+				margin-top:300px;
+				@include font-size(21);
 			}
 		} //.llamada-accion
 	} //p
@@ -287,6 +346,9 @@ header{
 	text-transform:uppercase;
 	font-family:$baseheadingfont;
 	@include font-size(30);
+	@include breakpoint(director){
+		@include font-size(38);
+	}
 }
 
 .location:before{
@@ -315,7 +377,7 @@ header{
 			@include font-size(21);
 		}
 
-		span{
+		span.cont{
 			display:block;
 			width:90%;
 			margin:0 auto;
@@ -324,6 +386,26 @@ header{
 			}
 			@include breakpoint(senior){
 				width:85%;
+			}
+
+			@include breakpoint(director){
+				width:60%;
+				float:right;
+			}
+
+			& img{
+				@include breakpoint(director){
+					width:80%;
+					padding:0 10%;
+				}
+			}
+		}
+
+		.descripcion-proyecto{
+			@include breakpoint(director){
+				width:30%;
+				float:left;
+				padding:100px 0 100px 10%;
 			}
 		}
 
@@ -355,6 +437,9 @@ header{
 			@include box-sizing(border-box);
 			text-align:center;
 		}
+		@include breakpoint(director){
+			@include font-size(18);
+		}
 	}
 
 	li:before{
@@ -380,6 +465,16 @@ header{
 			@include font-size(40);
 			@include border-radius(50px);
 		}
+		@include breakpoint(director){
+			margin:10px auto;
+			width:110px;
+			height:110px;
+			line-height:110px;
+			border: 3px solid;
+			@include font-size(45);
+			@include border-radius(70px);
+		}
+
 	}
 
 	li{
@@ -440,6 +535,9 @@ header{
 				width:60%;
 				padding:15px 100px;
 			}
+			@include breakpoint(director){
+				padding:30px 100px;
+			}
 
 			&:before{
 				content:"\e002";
@@ -454,6 +552,10 @@ header{
 				position:absolute;
 				bottom:19px;
 				right:10%;
+			}
+			@include breakpoint(director){
+				padding:30px 100px;
+				bottom:0;
 			}
 		}
 
@@ -473,6 +575,19 @@ header{
 		font-family:$baseheadingfont;
 		@include font-size(21);
 		margin-bottom:0;
+		@include breakpoint(director){
+			width:40%;
+			padding-left:10%;
+			float:left;
+		}
+	}
+
+	.boton-accion{
+		@include breakpoint(director){
+			width:50%;
+			float:right;
+			padding-top:25px;
+		}
 	}
 }
 
@@ -481,7 +596,8 @@ header{
 	padding-bottom:0;
 
 	.contenedor{
-		margin-bottom:0.65em;
+		margin:0 auto 0.65em auto;
+
 	}
 
 	.panel{
@@ -532,6 +648,10 @@ header{
 			width:578px;
 		}
 
+		@include breakpoint(director){
+			width:800px;
+		}
+
 		.liquid-slider-wrapper &{
 			padding-bottom:30px;
 		}
@@ -545,6 +665,9 @@ header{
 				}
 				@include breakpoint(junior){
 					margin-right:10px;
+				}
+				@include breakpoint(director){
+					margin-right:40px;
 				}
 
 			}
@@ -658,12 +781,19 @@ header{
 	overflow:hidden;
 	text-align:center;
 	padding-top:15px;
+	@include breakpoint(director){
+		width:1000px;
+	}
 }
 
 
 .contenedor-yt{
 	padding:15px 5%;
 	text-align:center;
+
+	@include breakpoint(director){
+		padding:15px 0;
+	}
 
 	.yt-boton{
 		@include font-size(36);

@@ -57,23 +57,26 @@
             </div>
         </header>
 
-        <nav role="navigation" class="clearfix">
-            <ul class="flexnav clearfix" data-breakpoint="768">
-                <li class="active"><a href="#">INICIO</a></li>
-                <li><a href="#">PROYECTOS</a></li>
-                <li><a href="#">PROCESO</a></li>
-                <li><a href="#">NOSOTROS</a></li>
-                <li><a href="#">CONTACTO</a></li>
-            </ul>
-        </nav>
+        <div class="contenedor-general nav-busqueda clearfix">
+            <nav role="navigation" class="clearfix">
+                <ul class="flexnav clearfix" data-breakpoint="768">
+                    <li class="active"><a href="#">INICIO</a></li>
+                    <li><a href="#">PROYECTOS</a></li>
+                    <li><a href="#">PROCESO</a></li>
+                    <li><a href="#">NOSOTROS</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </nav>
 
-        <div class="busqueda">
-            <form class="contenedor">
-                <input type="text" name="buscar" id="buscar">
-                <input type="submit" value="Buscar">
-            </form>
+            <div class="busqueda">
+                    <form class="contenedor">
+                        <input type="text" name="buscar" id="buscar">
+                        <input type="submit" value="Buscar">
+                    </form>
+            </div>
+            <!-- final .busqueda -->
+
         </div>
-        <!-- final .busqueda -->
 
         <section class="intro contenedor clearfix">
             <h1>
@@ -97,7 +100,7 @@
                     <ul class="slides">
                         <li>
                             <article>
-                                <span data-picture data-alt="Sitio web de Pinknoise Soluciones de Audio">
+                                <span data-picture data-alt="Sitio web de Pinknoise Soluciones de Audio" class="cont">
                                     <span data-src="img/pink-movil.png"></span>
                                     <span data-src="img/home-tablet.png"     data-media="(min-width: 650px)"></span>
                                     <span data-src="img/pink-laptop.png"      data-media="(min-width: 960px)"></span>
@@ -107,14 +110,17 @@
                                         <img src="img/pink-laptop.png" alt="Sitio web de Pinknoise Soluciones de Audio">
                                     </noscript>
                                 </span>
+                                <div class="descripcion-proyecto">
                                     <h1>Pinknoise. Dise&ntilde;o de Audio</h1>
-                                <p>Programaci&oacute;n y desarrollo responsivo</p>
-                                <strong class="ribbon-wrapp resaltar-boton"><a class="ribbon" href="#">Ver proyecto</a></strong>
+                                    <p>Programaci&oacute;n y desarrollo responsivo</p>
+                                    <strong class="ribbon-wrapp resaltar-boton"><a class="ribbon" href="#">Ver proyecto</a></strong>
+
+                                </div>
                             </article>
                         </li>
                         <li>
                             <article>
-                                <span data-picture data-alt="Sitio web de Pinknoise Soluciones de Audio">
+                                <span data-picture data-alt="Sitio web de Pinknoise Soluciones de Audio" class="cont">
                                     <span data-src="img/pink-movil.png"></span>
                                     <span data-src="img/home-tablet.png"     data-media="(min-width: 650px)"></span>
                                     <span data-src="img/pink-laptop.png"      data-media="(min-width: 960px)"></span>
@@ -124,9 +130,11 @@
                                         <img src="img/pink-laptop.png" alt="Sitio web de Pinknoise Soluciones de Audio">
                                     </noscript>
                                 </span>
-                                <h1>Pinknoise. 2</h1>
-                                <p>Programaci&oacute;n y desarrollo responsivo</p>
-                                <strong class="ribbon-wrapp resaltar-boton"><a class="ribbon" href="#">Ver proyecto</a></strong>
+                                <div class="descripcion-proyecto">
+                                    <h1>Pinknoise. 2</h1>
+                                    <p>Programaci&oacute;n y desarrollo responsivo</p>
+                                    <strong class="ribbon-wrapp resaltar-boton"><a class="ribbon" href="#">Ver proyecto</a></strong>
+                                </div>
                             </article>
                         </li>
                     </ul>
@@ -152,9 +160,11 @@
         <!-- section.servicios -->
 
         <section class="proceso resaltar-poco">
-            <div class="contenedor">
+            <div class="contenedor clearfix">
                 <p>Estamos convencidos que un proceso debidamente estructurado y transparente da como resultado proyectos exitosos</p>
-                <strong class="ribbon-wrapp"><a class="ribbon" href="#">Nuestro proceso</a></strong>
+                <div class="boton-accion">
+                    <strong class="ribbon-wrapp"><a class="ribbon" href="#">Nuestro proceso</a></strong>
+                </div>
             </div>
 
         </section>
@@ -177,27 +187,29 @@
 
                     <div>
                       <h2 class="title"></h2>
-                      <a class="twitter-timeline" href="https://twitter.com/coddica" data-widget-id="342015861684592640" height="300px">Tweets by @coddica</a>
-                        <script>
-                            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-                        </script>
+                      <div class="contenedor">
+                          <a class="twitter-timeline" href="https://twitter.com/coddica" data-widget-id="342015861684592640" height="300px">Tweets by @coddica</a>
+                            <script>
+                                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                            </script>
+                      </div>
 
                     </div>
                     <div>
                       <h2 class="title"></h2>
-                      <div id="fb-contenedor" class="contenedor-fb">
+                      <div id="fb-contenedor" class="contenedor-fb contenedor">
                       </div>
                     </div>
                     <div>
                       <h2 class="title"></h2>
-                      <div id="gplus-contenedor" class="contenedor-gplus">
+                      <div id="gplus-contenedor" class="contenedor-gplus contenedor">
                         <div class="g-plus" data-href="https://plus.google.com/114331353767221159686"></div>
 
                       </div>
                     </div>
                     <div >
                       <h2 class="title"></h2>
-                      <div class="contenedor-yt">
+                      <div class="contenedor-yt contenedor">
                             <p>C&oacute;ddica en <span aria-hidden="true" data-icon="&#xe003;" class="yt-boton"></span><span class="screen-reader-text">YouTube</span></p>
                             <strong class="ribbon-wrapp resaltar-boton"><a href="https://www.youtube.com/user/coddica" class="ribbon">Suscribirse</a></strong>
 

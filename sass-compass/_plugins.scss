@@ -16,6 +16,9 @@ $fourth_level: #cbcbc9;
 	max-height: 0;
 	padding:0;
 	background:$lightcolor;
+	@include breakpoint(director){
+		background:transparent;
+	}
 
 	&.show {
 		max-height: 2000px;
@@ -36,6 +39,13 @@ $fourth_level: #cbcbc9;
 		@include breakpoint(junior){
 			width:auto;
 		}
+
+		&:last-child{
+			@include breakpoint(director){
+				margin-right:0;
+			}
+		}
+
 	}
 	li a {
 		position: relative;
@@ -47,6 +57,10 @@ $fourth_level: #cbcbc9;
 		font-family:$basefont;
 		padding:20px 0;
 		@include font-size(18);
+
+		@include breakpoint(director){
+			@include font-size(19);
+		}
 
 		&:hover{
 			background:darken($lightcolor,5%);
@@ -164,6 +178,7 @@ $fourth_level: #cbcbc9;
 			display: block;
 			width: auto;
 			overflow: visible;
+			margin-right:12px;
 
 			&.active a{
 				border-bottom: 3px solid $lightcolor;
@@ -174,7 +189,6 @@ $fourth_level: #cbcbc9;
 		li a {
 			padding:10px;
 			color:$textcolor;
-			margin-right:10px;
 			@include transition(border 0.1s ease-out, color 0.1s ease-out);
 			&:hover{
 				border-bottom: 3px solid $lightcolor;
@@ -353,6 +367,9 @@ html[xmlns] .slides {display: block;}
 /* Direction Nav */
 .flex-direction-nav {*height: 0;}
 .flex-direction-nav a {width: 60px; height: 50px; margin: -20px 0 0; display: block; position: absolute; top: 30%; z-index: 10; cursor: pointer; text-indent: -9999px; -webkit-transition: all .3s ease;
+	@include breakpoint(director){
+		top:50%;
+	}
 }
 .flex-direction-nav a.flex-next{
 	background: url(../img/flecha-derecha.svg) no-repeat;
@@ -461,7 +478,7 @@ html[xmlns] .slides {display: block;}
 *******************************************************/
 .liquid-slider-wrapper .liquid-slider {
   background:$lightcolor;
-  width: 1030px;
+  width: 100%;
   /* Do not edit below this line */
   float: left;
   overflow: hidden;
@@ -487,7 +504,7 @@ html[xmlns] .slides {display: block;}
 * for the entire slider.
 *******************************************************/
 .liquid-slider-wrapper .liquid-slider .panel {
-  width: 1030px;
+  width: 100%;
   /* Do not edit below this line */
   display: block;
   float: left;
