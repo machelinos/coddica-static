@@ -147,7 +147,13 @@ overflow: visible; } } }
 //  9. MEDIA QUERIES 	==============================
 
 @mixin breakpoint($point) {
-  @if $point == intern {
+  @if $point == student {
+	@media only screen and (min-width: 360px) {
+		@content;
+	}
+  }
+
+  @else if $point == intern {
 	@media only screen and (min-width: 480px) {
 		@content;
 	}

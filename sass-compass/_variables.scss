@@ -48,7 +48,7 @@ $brightcolor 	: rgb(255,77,77);
 
 // Links
 
-$linkcolor 		    : rgb(1,53,104);
+$linkcolor 		    : $brightcolor;
 $linkcolorhover 	: darken($linkcolor, 10);
 $linkcolorvisited   : darken($linkcolorhover, 10);
 $linkcolorfocus 	: darken($linkcolorvisited, 10);

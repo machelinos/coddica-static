@@ -31,6 +31,10 @@ section, footer{
 	}
 }
 
+address{
+	font-style:normal;
+}
+
 
 // BOTONES GENERAL ==========================================================
 
@@ -421,6 +425,9 @@ nav{
 		list-style-type:none;
 		color: $textcolor;
 		position:relative;
+		@include box-sizing(border-box);
+		margin:0;
+		padding:0;
 	}
 
 	li{
@@ -596,6 +603,16 @@ nav{
 .contacto{
 	padding-bottom:0;
 
+	h1.contenedor{
+		margin:0 10px 0.65em 10px;
+
+		@include breakpoint(director){
+			width:1000px;
+			margin:0 auto 0.65em auto;
+		}
+
+	}
+
 	.contenedor{
 		margin:0 auto 0.65em auto;
 
@@ -619,6 +636,10 @@ nav{
 
 		&.contenedor{
 			width:100%;
+
+			@include breakpoint(director){
+				width:970px;
+			}
 		}
 	}
 
@@ -626,6 +647,7 @@ nav{
 		border:0;
 		padding:15px;
 		margin-bottom:15px;
+		@include box-sizing(border-box);
 	}
 
 	.ribbon{
@@ -822,7 +844,11 @@ nav{
 		h1{
 			@include font-size(45);
 			margin:45px 0;
+			.contacto-page &{
+				margin:45px 0 20px 0;
+			}
 		}
+
 	}
 
 	//general ========================================
@@ -870,8 +896,437 @@ nav{
 	} //mas-proyectos
 
 
+article.proyecto-individual{
+	position:relative;
+
+	span.cont{
+		@include breakpoint(senior){
+			width:50%;
+			float:right;
+		}
+	}
+
+	img{
+		display:block;
+		width:85%;
+		margin:0 auto;
+		@include breakpoint(intern){
+			width:70%;
+		}
+
+		@include breakpoint(senior){
+			width:90%;
+		}
+
+	}
+
+	.descripcion-proyecto{
+		text-align:center;
+
+		.contenedor &{
+			@include breakpoint(senior){
+				width:100%;
+				margin-right:0;
+				float:left;
+			}
+
+		}
+
+		h1{
+			@include font-size(21);
+			text-align:center;
+			@include breakpoint(senior){
+				margin: 50px 0 10px 0;
+				text-align:left;
+			}
+			@include breakpoint(director){
+				margin:120px 0 10px 0;
+			}
+		} //h1
+
+		p{
+			text-align:left;
+			margin-bottom:23px;
+			margin-top:15px;
+
+			&.trabajo-realizado{
+				color:rgb(51,51,51);
+				text-align:center;
+				font-weight:bold;
+				@include breakpoint(senior){
+					margin:0 0 10px 0;
+					text-align:left;
+				}
+			}
+		} //p
+	} //descripcion-proyecto
+
+	.intro-text{
+		margin-top:25px;
+		@include breakpoint(senior){
+			margin-top:80px;
+		}
+	}
+
+	.small{
+		padding:50px 0;
+		margin:0;
+		@include breakpoint(senior){
+			width:35%;
+			float:right;
+		}
+
+		span.cont{
+			@include breakpoint(senior){
+				width:100%;
+				float:none;
+				display:block;
+			}
+		}
+
+		img{
+			width:47.35294117647059%;
+			@include breakpoint(intern){
+				width:30%;
+			}
+
+			@include breakpoint(senior){
+				width:50%;
+			}
+		}
+	} //small
+
+	.large{
+		padding-bottom:50px;
+		margin:0;
+		@include breakpoint(senior){
+			width:60%;
+			float:left;
+		}
+
+		span.cont{
+			@include breakpoint(senior){
+				width:100%;
+				float:none;
+				display:block;
+				margin-top:100px;
+			}
+		}
+
+		img{
+			width:64.11764705882353%;
+
+			@include breakpoint(intern){
+				width:50%;
+			}
+
+			@include breakpoint(senior){
+				width:60%;
+			}
+		}
+	} //large
+
+	.resaltar-mas{
+
+		span.cont{
+			@include breakpoint(senior){
+				float:left;
+			}
+		}
+		img{
+			width:59.11764705882353%;
+
+			@include breakpoint(intern){
+				width:45%;
+			}
+			@include breakpoint(senior){
+				width:59.11764705882353%;
+			}
+
+		}
+
+		p{
+			@include breakpoint(senior){
+				padding-top:200px;
+			}
+			@media only screen and (min-width: 900px){
+				padding-top:250px;
+			}
+			@include breakpoint(director){
+				padding-top:290px;
+			}
+		}
+	}
+
+	.movil{
+		padding:50px 0;
+		text-align:center;
+
+		span.cont{
+			@include breakpoint(intern){
+				width:30%;
+				margin:0 auto;
+			}
+			@include breakpoint(senior){
+				float:right;
+				width:50%;
+				padding:0 10%;
+				@include box-sizing(border-box);
+			}
+
+			img{
+				@include breakpoint(intern){
+					width:50%;
+				}
+				@include breakpoint(senior){
+					width:100%;
+				}
+			}
+		}
+
+		p{
+			text-align:left;
+			@include breakpoint(senior){
+				padding-top:50px;
+				float:left;
+				width:50%;
+			}
+			@include breakpoint(director){
+				padding-top:200px;
+			}
+		}
+	}
+
+} //article.proyecto-individual
+
+.resaltar-mas{
+	background:$brightcolor;
+	color: $white;
+	padding: 50px 0;
+}
+
+.nav-proyectos{
+	margin-bottom:50px;
+	@include breakpoint(senior){
+		text-align:right;
+	}
+
+	ul{
+		list-style-type:none;
+		width:70%;
+		margin:0 auto;
+		@include breakpoint(intern){
+			width:45%;
+		}
+		@include breakpoint(junior){
+			width:40%;
+		}
+		@include breakpoint(senior){
+			width:30%;
+			float:right;
+			padding:0;
+		}
+	}
+
+	li{
+		float:left;
+		margin-right:3%;
+		text-align:center;
+
+		a{
+			color: $textcolor;
+			@include transition(color 0.1s ease-out);
+
+			&:hover{
+				text-decoration:none;
+				color:darken($textcolor,20%);
+				&:before{
+					color:darken($lightcolor,20%);
+				}
+			}
+		}
+
+		a:before{
+			display:block;
+			font-family:"icomoon";
+			@include font-size(36);
+			color:$lightcolor;
+			margin-bottom:10px;
+			@include transition(color 0.1s ease-out);
+		}
+
+		&:first-child a:before{
+			content: "\e004";
+		}
+
+		&:nth-child(2) a:before{
+			content:"\e00b";
+		}
+
+		&:last-child a:before{
+			content: "\e00c";
+		}
+
+	} //li
+} // nav-proyectos
 
 
+// contacto ===========================================================
+.direccion{
+	text-align:center;
+
+} //direccion
+
+.datos-ubicacion{
+	@include breakpoint(senior){
+		width:50%;
+		float:left;
+	}
+
+	p{
+		line-height:1.5em;
+	}
+
+	address{
+		@include breakpoint(senior){
+			text-align:left;
+			margin-top:20px;
+			padding-right:5%;
+		}
+		@include breakpoint(director){
+			margin-top:75px;
+		}
+	}
+} // datos-ubicacion
+
+.contact-form{
+	margin-top:20px;
+	padding:30px 0;
+	text-align:center;
+
+	form.contenedor{
+		margin:0 10px;
+		width:auto;
+
+		@include breakpoint(director){
+			width:70%;
+			margin:0 auto;
+		}
+	}
+
+} //.contact-form
+
+.map{
+	width:100%;
+	height:400px;
+	margin-bottom:50px;
+	@include breakpoint(senior){
+		width:50%;
+		height:248px;
+		float:right;
+	}
+	@include breakpoint(director){
+		height:300px;
+	}
+
+	img{
+		max-width:none;
+	}
+
+	.heading{
+		p{
+			color:$lightcolor;
+			@include font-size(18);
+			font-family:$baseheadingfont;
+			margin-bottom:5px;
+			font-weight:bold;
+		}
+	}
+} //map
+
+.social-media{
+	margin-top:50px;
+
+	h2{
+		@include breakpoint(senior){
+			width:30%;
+			float:left;
+			line-height:90px;
+			text-align:center;
+		}
+		@include breakpoint(director){
+			width:40%;
+		}
+	}
+
+	ul{
+		list-style-type:none;
+		width:95%;
+		margin:0 auto 50px auto;
+		padding:0;
+		@media screen and (min-width:400px){
+			width:85%;
+		}
+		@include breakpoint(intern){
+			width:75%;
+		}
+		@include breakpoint(junior){
+			width:74%;
+		}
+		@include breakpoint(senior){
+			float:right;
+		}
+		@include breakpoint(senior){
+			width:60%;
+		}
+	} //ul
+
+	li{
+		float:left;
+		margin-right:1%;
+		@include breakpoint(student){
+			margin-right:2%;
+		}
+		@include breakpoint(intern){
+			margin-right:3%;
+		}
+		@include breakpoint(junior){
+			margin-right:4%;
+		}
+	} //li
+
+	a{
+		display:block;
+		width:64px;
+		height:64px;
+		line-height:64px;
+		text-align:center;
+		background:$brightcolor;
+		color:$white;
+		@include border-radius(32px);
+		@include breakpoint(student){
+			width:70px;
+			height:70px;
+			line-height:70px;
+			@include border-radius(35px);
+			@include font-size(21);
+		}
+		@include breakpoint(junior){
+			width:90px;
+			height:90px;
+			line-height:90px;
+			@include border-radius(45px);
+			@include font-size(24);
+
+		}
+
+		&:hover{
+			background:darken($brightcolor,20%);
+			text-decoration:none;
+		}
+	} //a
+
+} //social-media
 
 // FOOTER ===========================================================
 .resaltar-menos{

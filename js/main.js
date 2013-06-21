@@ -11,18 +11,21 @@ $(document).ready(function(){
         $('.busqueda').slideToggle('fast');
     });
 
-
-
 });
+
 
 $(window).load(function() {
     $('.flexslider').flexslider({
     	controlNav: false,
         smoothHeight: true
     });
+
+
+
   });
 
-var breakpointsearch=768;
+
+var breakpointsearch=760;
 $(window).bind("load resize", function(){
   var container_width = $('#fb-contenedor').width();
     $('#fb-contenedor').html('<div class="fb-like-box" ' +
