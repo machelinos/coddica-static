@@ -1134,6 +1134,7 @@ article.proyecto-individual{
 		text-align:center;
 
 		a{
+			display:block;
 			color: $textcolor;
 			@include transition(color 0.1s ease-out);
 
@@ -1303,6 +1304,7 @@ article.proyecto-individual{
 		text-align:center;
 		background:$brightcolor;
 		color:$white;
+		@include transition(background 0.1s ease-out);
 		@include border-radius(32px);
 		@include breakpoint(student){
 			width:70px;
@@ -1327,6 +1329,418 @@ article.proyecto-individual{
 	} //a
 
 } //social-media
+
+
+// PROCESO ===========================================================
+.proceso-pasos{
+	padding-top:0;
+	ol{
+		list-style-type:none;
+		margin:0;
+		padding:0;
+	} //ol
+
+	ol > li:after{
+		content:" ";
+		width:1px;
+		height:100px;
+		border-right: 2px dashed $textcolor;
+		display:block;
+		margin:30px auto;
+	}
+
+	ol > li:last-child:after{
+		border:0;
+		display:none;
+	}
+
+	ol > li{
+		&:nth-child(odd){
+			h2:before, ul li:before{
+				background:$lightcolor;
+			}
+		}
+
+		&:nth-child(even){
+			h2:before, ul li:before{
+				background:$brightcolor;
+			}
+		}
+
+		&:first-child{
+
+			h2{
+				@include breakpoint(senior){
+					padding-top:0;
+					text-align:left;
+				}
+			}
+
+			h2, p, ul{
+				@include breakpoint(senior){
+					width:60%;
+				}
+			}
+
+			h2:before{
+				@include breakpoint(senior){
+					display:inline-block;
+					float:left;
+					margin:0 3% 100px 0;
+				}
+			}
+
+			&:after{
+				@include breakpoint(senior){
+					width:15%;
+					height:50px;
+					border-top:2px dashed $textcolor;
+					border-right:2px dashed $textcolor;
+					float:right;
+					margin-top:-90px;
+					margin-right:25%;
+					@include border-top-right-radius(10px);
+				}
+				@media screen and (min-width:950px){
+					margin-top:-110px;
+				}
+				@include breakpoint(director){
+					margin-top:-125px;
+				}
+			}
+
+		}
+
+		&:nth-child(2){
+			@include breakpoint(senior){
+				padding-top:25px;
+			}
+			h2:before{
+				content:"\e010";
+			}
+			h2{
+				@include breakpoint(senior){
+					padding-top:0;
+				}
+			}
+
+			div{
+				@include breakpoint(senior){
+					width:50%;
+					margin-left:50%;
+				}
+			}
+
+			&:after{
+				@include breakpoint(senior){
+					border:0;
+					display:none;
+				}
+			}
+
+			&:before{
+				@include breakpoint(senior){
+					width:25%;
+					height:100px;
+					border-top:2px dashed $textcolor;
+					border-left:2px dashed $textcolor;
+					float:left;
+					margin-left:20%;
+					margin-top:320px;
+					@include border-top-left-radius(10px);
+
+				}
+				@media screen and (min-width:950px){
+					margin-top:305px;
+				}
+				@include breakpoint(director){
+					margin-top:290px;
+				}
+			}
+
+		} //nth-child(2)
+
+		&:nth-child(3){
+			@include breakpoint(director){
+				padding-top:25px;
+			}
+			h2:before{
+				content:"\e012";
+			}
+			h2{
+				@include breakpoint(senior){
+					padding-top:0;
+				}
+			}
+
+			div{
+				@include breakpoint(senior){
+					width:40%;
+					margin-right:60%;
+				}
+			}
+
+			&:after{
+				@include breakpoint(senior){
+					width:30%;
+					height:70px;
+					border-top:2px dashed $textcolor;
+					border-right:2px dashed $textcolor;
+					float:right;
+					margin-right:25%;
+					margin-top:-80px;
+					@include border-top-right-radius(10px);
+				}
+			}
+
+		} //nth-child(3)
+
+		&:nth-child(4){
+			@include breakpoint(senior){
+				padding-top:20px;
+			}
+
+			h2:before{
+				content:"\e013";
+			}
+
+			h2{
+				@include breakpoint(senior){
+					padding-top:0;
+				}
+			}
+
+			div{
+				@include breakpoint(senior){
+					width:50%;
+					margin-left:50%;
+				}
+			}
+
+			&:after{
+				@include breakpoint(senior){
+					border:0;
+					display:none;
+				}
+			}
+
+			&:before{
+				@include breakpoint(senior){
+					width:15%;
+					height:100px;
+					border-top:2px dashed $textcolor;
+					border-left:2px dashed $textcolor;
+					float:left;
+					margin-left:30%;
+					margin-top:355px;
+					@include border-top-left-radius(10px);
+
+				}
+				@media screen and (min-width:859px){
+					margin-top:340px;
+				}
+				@media screen and (min-width:942px){
+					height:80px;
+				}
+				@include breakpoint(director){
+					height:60px;
+					margin-top:325px;
+				}
+			}
+		} //nth-child(4)
+
+		&:nth-child(5){
+			h2:before{
+				content:"\e014";
+			}
+			h2{
+				@include breakpoint(senior){
+					padding-top:0;
+				}
+			}
+
+			div{
+				@include breakpoint(senior){
+					width:60%;
+					margin-right:40%;
+				}
+			}
+
+			&:after{
+				@include breakpoint(senior){
+					width:15%;
+					height:75px;
+					border-top:2px dashed $textcolor;
+					border-right:2px dashed $textcolor;
+					float:right;
+					margin-right:25%;
+					margin-top:-80px;
+					@include border-top-right-radius(10px);
+				}
+			}
+		} //nth-child(5)
+
+		&:nth-child(6){
+			@include breakpoint(senior){
+				padding-top:25px;
+			}
+
+			h2:before{
+				content:"\e020";
+			}
+			h2{
+				@include breakpoint(senior){
+					padding-top:0;
+				}
+			}
+
+			div{
+				@include breakpoint(senior){
+					width:50%;
+					margin-left:50%;
+				}
+			}
+
+			&:after{
+				@include breakpoint(senior){
+					border:0;
+					display:none;
+				}
+			}
+
+			&:before{
+				@include breakpoint(senior){
+					width:15%;
+					height:40px;
+					border-top:2px dashed $textcolor;
+					border-left:2px dashed $textcolor;
+					float:left;
+					margin-left:30%;
+					margin-top:260px;
+					@include border-top-left-radius(10px);
+
+				}
+				@include breakpoint(director){
+					height:30px;
+				}
+			}
+		} //nth-child(6)
+
+
+		&:nth-child(7){
+			@include breakpoint(director){
+				padding-top:25px;
+			}
+			h2:before{
+				content:"\e016";
+			}
+			h2{
+				@include breakpoint(senior){
+					padding-top:0;
+				}
+			}
+
+			div{
+				@include breakpoint(senior){
+					width:60%;
+					margin-right:40%;
+				}
+			}
+
+			&:after{
+				@include breakpoint(senior){
+					width:20%;
+					height:50px;
+					border-top:2px dashed $textcolor;
+					border-right:2px dashed $textcolor;
+					float:right;
+					margin-right:25%;
+					margin-top:-80px;
+					@include border-top-right-radius(10px);
+				}
+				@media screen and (min-width:771px){
+					width:12%;
+				}
+				@include breakpoint(director){
+					width:15%;
+				}
+			}
+
+		} //nth-child(7)
+
+		&:nth-child(8){
+			h2:before{
+				content:"\e021";
+			}
+			h2{
+				@include breakpoint(senior){
+					padding-top:0;
+				}
+			}
+
+			div{
+				@include breakpoint(senior){
+					width:50%;
+					margin-left:50%;
+				}
+			}
+
+			&:after{
+				@include breakpoint(senior){
+					border:0;
+					display:none;
+				}
+			}
+
+		}
+
+	} //li
+
+
+	h2{
+		text-align:center;
+
+		&:before{
+			content:"\e00e";
+			font-family:"icomoon";
+			color:$white;
+			width:160px;
+			height:160px;
+			line-height:160px;
+			text-align:center;
+			margin:0 auto 25px auto;
+			display:block;
+			@include border-radius(80px);
+			@include font-size(72);
+			font-weight:normal;
+		}
+	} //h2
+
+	ul{
+		list-style-type:none;
+		padding:0;
+		li{
+			margin:0 0 10px 23px;
+
+		}
+		li:before{
+			content:" ";
+			width:8px;
+			height:8px;
+			background:$lightcolor;
+			display:block;
+			@include border-radius(4px);
+			float:left;
+			margin:8px 0 0 -15px;
+		}
+
+		em{
+			font-weight:bold;
+			font-style:normal;
+		}
+	} //ul
+
+}  //.proceso-pasos
 
 // FOOTER ===========================================================
 .resaltar-menos{
