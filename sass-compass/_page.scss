@@ -135,6 +135,19 @@ address{
   }
 }
 
+.notif-form{
+	border: 1px solid $brightcolor;
+	padding:10px;
+	color:$white;
+	&.success-submit{
+		border:1px solid green;
+	}
+
+	em{
+		color:$brightcolor;
+		font-style:normal;
+	}
+}
 
 
 
@@ -235,6 +248,7 @@ header{
 			padding-right:10px;
 			background:$textcolor;
 			color:$white;
+			@include border-radius(0);
 
 			@include breakpoint(senior){
 				background:$lightcolor;
@@ -600,6 +614,10 @@ nav{
 }
 
 // SECTION contacto ===========================================================
+.no-js .submit-boton{
+	display:none;
+}
+
 .contacto{
 	padding-bottom:0;
 
@@ -936,11 +954,11 @@ article.proyecto-individual{
 			@include font-size(21);
 			text-align:center;
 			@include breakpoint(senior){
-				margin: 50px 0 10px 0;
+				margin: 110px 0 10px 0;
 				text-align:left;
 			}
 			@include breakpoint(director){
-				margin:120px 0 10px 0;
+				margin:150px 0 10px 0;
 			}
 		} //h1
 
@@ -1344,7 +1362,8 @@ article.proyecto-individual{
 		content:" ";
 		width:1px;
 		height:100px;
-		border-right: 2px dashed $textcolor;
+//		border-right: 2px dashed $textcolor;
+		border-right: 4px solid $lightcolor;
 		display:block;
 		margin:30px auto;
 	}
@@ -1355,17 +1374,26 @@ article.proyecto-individual{
 	}
 
 	ol > li{
-		&:nth-child(odd){
-			h2:before, ul li:before{
-				background:$lightcolor;
-			}
+
+		ul:li:before{
+			background:$lightcolor;
 		}
 
-		&:nth-child(even){
-			h2:before, ul li:before{
-				background:$brightcolor;
-			}
+		h2 span.icon-list{
+			font-family:"icomoon";
+			color:$white;
+			width:160px;
+			height:160px;
+			line-height:160px;
+			text-align:center;
+			margin:0 auto 25px auto;
+			display:block;
+			background:$lightcolor;
+			@include border-radius(80px);
+			@include font-size(72);
+			font-weight:normal;
 		}
+
 
 		&:first-child{
 
@@ -1415,9 +1443,7 @@ article.proyecto-individual{
 			@include breakpoint(senior){
 				padding-top:25px;
 			}
-			h2:before{
-				content:"\e010";
-			}
+
 			h2{
 				@include breakpoint(senior){
 					padding-top:0;
@@ -1464,9 +1490,6 @@ article.proyecto-individual{
 			@include breakpoint(director){
 				padding-top:25px;
 			}
-			h2:before{
-				content:"\e012";
-			}
 			h2{
 				@include breakpoint(senior){
 					padding-top:0;
@@ -1498,10 +1521,6 @@ article.proyecto-individual{
 		&:nth-child(4){
 			@include breakpoint(senior){
 				padding-top:20px;
-			}
-
-			h2:before{
-				content:"\e013";
 			}
 
 			h2{
@@ -1550,9 +1569,6 @@ article.proyecto-individual{
 		} //nth-child(4)
 
 		&:nth-child(5){
-			h2:before{
-				content:"\e014";
-			}
 			h2{
 				@include breakpoint(senior){
 					padding-top:0;
@@ -1585,9 +1601,6 @@ article.proyecto-individual{
 				padding-top:25px;
 			}
 
-			h2:before{
-				content:"\e020";
-			}
 			h2{
 				@include breakpoint(senior){
 					padding-top:0;
@@ -1631,9 +1644,6 @@ article.proyecto-individual{
 			@include breakpoint(director){
 				padding-top:25px;
 			}
-			h2:before{
-				content:"\e016";
-			}
 			h2{
 				@include breakpoint(senior){
 					padding-top:0;
@@ -1669,9 +1679,6 @@ article.proyecto-individual{
 		} //nth-child(7)
 
 		&:nth-child(8){
-			h2:before{
-				content:"\e021";
-			}
 			h2{
 				@include breakpoint(senior){
 					padding-top:0;
@@ -1699,21 +1706,6 @@ article.proyecto-individual{
 
 	h2{
 		text-align:center;
-
-		&:before{
-			content:"\e00e";
-			font-family:"icomoon";
-			color:$white;
-			width:160px;
-			height:160px;
-			line-height:160px;
-			text-align:center;
-			margin:0 auto 25px auto;
-			display:block;
-			@include border-radius(80px);
-			@include font-size(72);
-			font-weight:normal;
-		}
 	} //h2
 
 	ul{
@@ -1727,7 +1719,7 @@ article.proyecto-individual{
 			content:" ";
 			width:8px;
 			height:8px;
-			background:$lightcolor;
+			background:$textcolor;
 			display:block;
 			@include border-radius(4px);
 			float:left;

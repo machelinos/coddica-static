@@ -1,3 +1,73 @@
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = trim($_POST["nombre"]);
+    $email = trim($_POST["email"]);
+    $message = trim($_POST["mensaje"]);
+
+    if ($name == "" OR $email == "" OR $message == "") {
+        $hasError="true";
+        $errorCompletar="true";
+    }
+
+    foreach( $_POST as $value ){
+        if( stripos($value,'Content-Type:') !== FALSE ){
+            $hasError="true";
+            $errorInformacion="true";
+        }
+    }
+
+    if ($_POST["address"] != "") {
+        $hasError="true";
+        $errorSubmit="true";
+    }
+
+    require_once("lib/phpmailer/class.phpmailer.php");
+    $mail = new PHPMailer();
+/*
+    $mail->IsSMTP();
+    //Enable SMTP debugging
+    // 0 = off (for production use)
+    // 1 = client messages
+    // 2 = client and server messages
+    $mail->SMTPDebug = 2;
+    //Ask for HTML-friendly debug output
+    $mail->Debugoutput = 'html';
+    //Set the hostname of the mail server
+    $mail->Host = "smtp.postmarkapp.com";
+    //Set the SMTP port number - likely to be 25, 465 or 587
+    $mail->Port = 2525;
+    //Username to use for SMTP authentication
+    $mail->Username = "cf768285-192c-4667-b91f-b8f9ea3f777b";
+    //Password to use for SMTP authentication
+    $mail->Password = "cf768285-192c-4667-b91f-b8f9ea3f777b";
+
+    if (!$mail->ValidateAddress($email)){
+        $hasError="true";
+        $errorValidMail="true";
+    }
+*/
+
+    if(!$hasError=="true"){
+        $email_body = "";
+        $email_body = $email_body . "Nombre: " . $name . "<br>";
+        $email_body = $email_body . "Email: " . $email . "<br>";
+        $email_body = $email_body . "Mensaje: " . $message;
+
+        $mail->SetFrom($email, $name);
+        $address = "marcel.cabrera@gmail.com";
+        $mail->AddAddress($address, "coddica.mx");
+        $mail->Subject = "Forma de contacto de coddica.mx | " . $name;
+        $mail->MsgHTML($email_body);
+
+        if(!$mail->Send()) {
+          $emailSent="false";
+        }else{
+            $emailSent="true";
+        }
+    }
+}
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang ="es" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="es" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
@@ -19,8 +89,6 @@
 
         <link rel="stylesheet" href="../css/estilos.css">
 
-        <!-- For Adaptive Images -->
-        <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
         <script src="../js/modernizr-2.6.2.min.js"></script>
 
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../img/touch/apple-touch-icon-144x144-precomposed.png">
@@ -34,7 +102,7 @@
 
         <link rel="shortcut icon" href="../img/favicon.ico">
     </head>
-    <body class="interior contacto-page">
+    <body class="interior contacto-page" id="skrollr-body">
         <!--[if lt IE 7]>
             <p class="chromeframe">Est&aacute;s usando un navegador <strong>obsoleto</strong> browser. Puedes <a href="http://browsehappy.com/">actualizar tu navegador</a> o <a href="http://www.google.com/chromeframe/?redirect=true">activar Google Chrome Frame</a> para mejorar tu experiencia.</p>
         <![endif]-->
@@ -63,7 +131,9 @@
                     <li><a href="../">INICIO</a></li>
                     <li><a href="../proyectos/">PROYECTOS</a></li>
                     <li><a href="../proceso/">PROCESO</a></li>
+                    <!--
                     <li><a href="../nosotros/">NOSOTROS</a></li>
+                    -->
                     <li class="active"><a href="../contacto/">CONTACTO</a></li>
                 </ul>
             </nav>
@@ -114,7 +184,7 @@
                 <input type="text" id="nombre" class="nombre" name="nombre" placeholder="Nombre*">
                 <input type="mail" id="email" class="email" name="email" placeholder="Email*">
                 <textarea id="mensaje" class="mensaje" name="mensaje" placeholder="Mensaje*"></textarea>
-                <strong class="ribbon-wrapp resaltar-boton"><a href="#" class="ribbon">Enviar</a></strong>
+                <strong class="ribbon-wrapp resaltar-boton"><a href="#" class="ribbon submit-form">Enviar</a></strong>
             </form>
         </div>
         <!-- .contact-form -->

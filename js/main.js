@@ -11,6 +11,10 @@ $(document).ready(function(){
         $('.busqueda').slideToggle('fast');
     });
 
+    $('.submit-form').click(function(){
+        $('form').submit();
+    });
+
 });
 
 
@@ -23,7 +27,6 @@ $(window).load(function() {
 
 
   });
-
 
 var breakpointsearch=760;
 $(window).bind("load resize", function(){

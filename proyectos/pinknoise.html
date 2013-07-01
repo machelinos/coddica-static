@@ -19,8 +19,6 @@
 
         <link rel="stylesheet" href="../css/estilos.css">
 
-        <!-- For Adaptive Images -->
-        <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
         <script src="../js/modernizr-2.6.2.min.js"></script>
 
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../img/touch/apple-touch-icon-144x144-precomposed.png">
@@ -34,8 +32,8 @@
 
         <link rel="shortcut icon" href="../img/favicon.ico">
     </head>
-    <body class="interior">
-        <!--[if lt IE 7]>
+    <body class="interior" id="skrollr-body">
+        <!--[if lte IE 7]>
             <p class="chromeframe">Est&aacute;s usando un navegador <strong>obsoleto</strong> browser. Puedes <a href="http://browsehappy.com/">actualizar tu navegador</a> o <a href="http://www.google.com/chromeframe/?redirect=true">activar Google Chrome Frame</a> para mejorar tu experiencia.</p>
         <![endif]-->
 
@@ -63,7 +61,9 @@
                     <li><a href="../">INICIO</a></li>
                     <li class="active"><a href="../proyectos/">PROYECTOS</a></li>
                     <li><a href="../proceso/">PROCESO</a></li>
+                    <!--
                     <li><a href="../nosotros/">NOSOTROS</a></li>
+                    -->
                     <li><a href="../contacto/">CONTACTO</a></li>
                 </ul>
             </nav>
@@ -83,17 +83,18 @@
         </div>
 
         <article class="clearfix proyecto-individual">
-                <span data-picture data-alt="Proyecto Sitio web de Pinknoise Soluciones de Audio" class="cont clearfix">
-                    <span data-src="../img/pink-desktop360.png"></span>
-                    <span data-src="../img/pink-desktop-large.png"     data-media="(min-width: 650px)"></span>
+                <div class="contenedor clearfix">
 
-                    <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-                    <noscript>
-                        <img src="../img/pink-desktop-large.png" alt="Sitio web de Pinknoise Soluciones de Audio">
-                    </noscript>
-                </span>
+                    <span data-picture data-alt="Proyecto Sitio web de Pinknoise Soluciones de Audio" class="cont clearfix">
+                        <span data-src="../img/pinknoise-desktop-movil.png"></span>
+                        <span data-src="../img/pinknoise-desktop-tablet-desktop.png" data-media="(min-width: 650px)"></span>
 
-                <div class="contenedor">
+                        <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+                        <noscript>
+                            <img src="../img/pinknoise-desktop-tablet-desktop.png" alt="Sitio web de Pinknoise Soluciones de Audio">
+                        </noscript>
+                    </span>
+
                     <div class="descripcion-proyecto">
                         <h1>Pinknoise. Dise&ntilde;o de Audio</h1>
                         <p class="trabajo-realizado">Programaci&oacute;n y desarrollo responsivo</p>
@@ -110,10 +111,10 @@
                 <div class="detalles contenedor clearfix">
                     <div class="detalle small contenedor">
                         <span data-picture data-alt="Detalle de web de Pinknoise: Control de Vol&uacute;men" class="cont">
-                            <span data-src="../img/pink-vol-360.png"></span>
-                            <span data-src="../img/pink-vol-960.png"     data-media="(min-width: 1000px)"></span>
+                            <span data-src="../img/pinknoise-volumen-movil.png"></span>
+                            <span data-src="../img/pinknoise-volumen-tablet-desktop.png"     data-media="(min-width: 1000px)"></span>
                             <noscript>
-                                <img src="../img/pink-vol-960.png" alt="Detalle de web de Pinknoise: Control de Vol&uacute;men">
+                                <img src="../img/pinknoise-volumen-tablet-desktop.png" alt="Detalle de web de Pinknoise: Control de Vol&uacute;men">
                             </noscript>
                         </span>
 
@@ -124,11 +125,11 @@
 
                     <div class="detalle large contenedor">
                         <span data-picture data-alt="Detalle de web de Pinknoise: Cintas de grabaci&oacute;n" class="cont">
-                            <span data-src="../img/pink-cintas-360.png"></span>
-                            <span data-src="../img/pink-cintas-768.png"     data-media="(min-width: 760px)"></span>
-                            <span data-src="../img/pink-cintas-1000.png"     data-media="(min-width: 1000px)"></span>
+                            <span data-src="../img/pinknoise-cintas-movil.png"></span>
+                            <span data-src="../img/pinknoise-cintas-tablet.png"     data-media="(min-width: 760px)"></span>
+                            <span data-src="../img/pinknoise-cintas-desktop.png"     data-media="(min-width: 1000px)"></span>
                             <noscript>
-                                <img src="../img/pink-cintas-960.png" alt="Detalle de web de Pinknoise: Cintas de grabaci&oacute;n">
+                                <img src="../img/pinknoise-cintas-desktop.png" alt="Detalle de web de Pinknoise: Cintas de grabaci&oacute;n">
                             </noscript>
                         </span>
 
@@ -142,11 +143,11 @@
                 <div class="resaltar-mas clearfix">
                     <div class="contenedor tableta">
                         <span data-picture data-alt="Sitio web Piknoise visto en tableta" class="cont">
-                            <span data-src="../img/pink-tablet-proyecto-360.png"></span>
-                            <span data-src="../img/pink-tablet-proyecto-768.png"     data-media="(min-width: 760px)"></span>
-                            <span data-src="../img/pink-tablet-proyecto-1000.png"     data-media="(min-width: 1000px)"></span>
+                            <span data-src="../img/pinknoise-tabletproyecto-movil.png"></span>
+                            <span data-src="../img/pinknoise-tabletproyecto-tablet.png"     data-media="(min-width: 760px)"></span>
+                            <span data-src="../img/pinknoise-tabletproyecto-desktop.png"     data-media="(min-width: 1000px)"></span>
                             <noscript>
-                                <img src="../img/pink-tablet-proyecto-1000.png" alt="Sitio web Piknoise visto en tableta">
+                                <img src="../img/pinknoise-tabletproyecto-desktop.png" alt="Sitio web Piknoise visto en tableta">
                             </noscript>
                         </span>
 
@@ -156,10 +157,10 @@
 
                 <div class="contenedor movil clearfix">
                     <span data-picture data-alt="Sitio web Piknoise visto en tel&eacute;fono m&oacute;vil" class="cont">
-                        <span data-src="../img/pinknoise-movil-360.png"></span>
-                        <span data-src="../img/pinknoise-movil-1000.png"     data-media="(min-width: 760px)"></span>
+                        <span data-src="../img/pinknoise-movilproyecto-movil.png"></span>
+                        <span data-src="../img/pinknoise-movilproyecto-desktop.png"     data-media="(min-width: 760px)"></span>
                         <noscript>
-                            <img src="../img/pinknoise-movil-1000.png" alt="Sitio web Piknoise visto en tel&eacute;fono m&oacute;vil">
+                            <img src="../img/pinknoise-movilproyecto-desktop.png" alt="Sitio web Piknoise visto en tel&eacute;fono m&oacute;vil">
                         </noscript>
                     </span>
 
