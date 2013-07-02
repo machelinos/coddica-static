@@ -4584,8 +4584,83 @@ article.proyecto-individual .movil p {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  position: relative;
 }
-/* line 1361, ../sass-compass/_page.scss */
+@media only screen and (min-width: 768px) {
+  /* line 1355, ../sass-compass/_page.scss */
+  .proceso-pasos ol {
+    background: #fff;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 3341, color-stop(0%, #ffffff), color-stop(2.39449%, #ffffff), color-stop(2.99312%, #ffffff), color-stop(3.02305%, #00adef), color-stop(99.97007%, #00adef), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3340px, #ffffff 3341px);
+    background-image: -moz-linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3340px, #ffffff 3341px);
+    background-image: -o-linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3340px, #ffffff 3341px);
+    background-image: linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3340px, #ffffff 3341px);
+    background-position: 50%;
+    background-repeat: repeat-y;
+    background-size: 3px 100%;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 1355, ../sass-compass/_page.scss */
+  .proceso-pasos ol {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 3321, color-stop(0%, #ffffff), color-stop(2.40891%, #ffffff), color-stop(3.01114%, #ffffff), color-stop(3.04125%, #00adef), color-stop(99.96989%, #00adef), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3320px, #ffffff 3321px);
+    background-image: -moz-linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3320px, #ffffff 3321px);
+    background-image: -o-linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3320px, #ffffff 3321px);
+    background-image: linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3320px, #ffffff 3321px);
+  }
+}
+@media screen and (min-width: 825px) {
+  /* line 1355, ../sass-compass/_page.scss */
+  .proceso-pasos ol {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 3276, color-stop(0%, #ffffff), color-stop(2.442%, #ffffff), color-stop(3.0525%, #ffffff), color-stop(3.08303%, #00adef), color-stop(99.96947%, #00adef), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3275px, #ffffff 3276px);
+    background-image: -moz-linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3275px, #ffffff 3276px);
+    background-image: -o-linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3275px, #ffffff 3276px);
+    background-image: linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3275px, #ffffff 3276px);
+  }
+}
+@media screen and (min-width: 850px) {
+  /* line 1355, ../sass-compass/_page.scss */
+  .proceso-pasos ol {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 3256, color-stop(0%, #ffffff), color-stop(2.457%, #ffffff), color-stop(3.07125%, #ffffff), color-stop(3.10197%, #00adef), color-stop(99.96929%, #00adef), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3255px, #ffffff 3256px);
+    background-image: -moz-linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3255px, #ffffff 3256px);
+    background-image: -o-linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3255px, #ffffff 3256px);
+    background-image: linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3255px, #ffffff 3256px);
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 1355, ../sass-compass/_page.scss */
+  .proceso-pasos ol {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 3216, color-stop(0%, #ffffff), color-stop(2.48756%, #ffffff), color-stop(3.10945%, #ffffff), color-stop(3.14055%, #00adef), color-stop(99.96891%, #00adef), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3215px, #ffffff 3216px);
+    background-image: -moz-linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3215px, #ffffff 3216px);
+    background-image: -o-linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3215px, #ffffff 3216px);
+    background-image: linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3215px, #ffffff 3216px);
+  }
+}
+@media screen and (min-width: 932px) {
+  /* line 1355, ../sass-compass/_page.scss */
+  .proceso-pasos ol {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 3196, color-stop(0%, #ffffff), color-stop(2.50313%, #ffffff), color-stop(3.12891%, #ffffff), color-stop(3.1602%, #00adef), color-stop(99.96871%, #00adef), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3195px, #ffffff 3196px);
+    background-image: -moz-linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3195px, #ffffff 3196px);
+    background-image: -o-linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3195px, #ffffff 3196px);
+    background-image: linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3195px, #ffffff 3196px);
+  }
+}
+@media screen and (min-width: 955px) {
+  /* line 1355, ../sass-compass/_page.scss */
+  .proceso-pasos ol {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 3101, color-stop(0%, #ffffff), color-stop(2.57981%, #ffffff), color-stop(3.22477%, #ffffff), color-stop(3.25701%, #00adef), color-stop(99.96775%, #00adef), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3100px, #ffffff 3101px);
+    background-image: -moz-linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3100px, #ffffff 3101px);
+    background-image: -o-linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3100px, #ffffff 3101px);
+    background-image: linear-gradient(#ffffff, #ffffff 80px, #ffffff 100px, #00adef 101px, #00adef 3100px, #ffffff 3101px);
+  }
+}
+/* line 1389, ../sass-compass/_page.scss */
 .proceso-pasos ol > li:after {
   content: " ";
   width: 1px;
@@ -4594,16 +4669,39 @@ article.proyecto-individual .movil p {
   display: block;
   margin: 30px auto;
 }
-/* line 1371, ../sass-compass/_page.scss */
+@media only screen and (min-width: 768px) {
+  /* line 1389, ../sass-compass/_page.scss */
+  .proceso-pasos ol > li:after {
+    height: 0;
+    border-right: 0;
+  }
+}
+/* line 1405, ../sass-compass/_page.scss */
 .proceso-pasos ol > li:last-child:after {
   border: 0;
   display: none;
 }
-/* line 1378, ../sass-compass/_page.scss */
+/* line 1410, ../sass-compass/_page.scss */
+.proceso-pasos ol > li {
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  /* line 1410, ../sass-compass/_page.scss */
+  .proceso-pasos ol > li {
+    width: 45%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 1416, ../sass-compass/_page.scss */
+  .proceso-pasos ol > li:nth-child(even) {
+    margin-left: 55%;
+  }
+}
+/* line 1423, ../sass-compass/_page.scss */
 .proceso-pasos ol > li ul:li:before {
   background: #00adef;
 }
-/* line 1382, ../sass-compass/_page.scss */
+/* line 1427, ../sass-compass/_page.scss */
 .proceso-pasos ol > li h2 span.icon-list {
   font-family: "icomoon";
   color: white;
@@ -4614,369 +4712,78 @@ article.proyecto-individual .movil p {
   margin: 0 auto 25px auto;
   display: block;
   background: #00adef;
-  -webkit-border-radius: 80px;
-  -moz-border-radius: 80px;
-  -ms-border-radius: 80px;
-  -o-border-radius: 80px;
-  border-radius: 80px;
+  -webkit-border-radius: 84px;
+  -moz-border-radius: 84px;
+  -ms-border-radius: 84px;
+  -o-border-radius: 84px;
+  border-radius: 84px;
   font-size: 72px;
   font-size: 7.2rem;
   font-weight: normal;
+  position: relative;
+  z-index: 2;
 }
 @media only screen and (min-width: 768px) {
-  /* line 1400, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:first-child h2 {
-    padding-top: 0;
-    text-align: left;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 1407, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:first-child h2, .proceso-pasos ol > li:first-child p, .proceso-pasos ol > li:first-child ul {
-    width: 60%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 1413, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:first-child h2:before {
-    display: inline-block;
-    float: left;
-    margin: 0 3% 100px 0;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 1421, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:first-child:after {
-    width: 15%;
-    height: 50px;
-    border-top: 2px dashed #555555;
-    border-right: 2px dashed #555555;
-    float: right;
-    margin-top: -90px;
-    margin-right: 25%;
-    -moz-border-radius-topright: 10px;
-    -webkit-border-top-right-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-}
-@media screen and (min-width: 950px) {
-  /* line 1421, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:first-child:after {
-    margin-top: -110px;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  /* line 1421, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:first-child:after {
-    margin-top: -125px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 1442, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(2) {
-    padding-top: 25px;
+  /* line 1427, ../sass-compass/_page.scss */
+  .proceso-pasos ol > li h2 span.icon-list {
+    border: 3px solid white;
   }
 }
 @media only screen and (min-width: 768px) {
   /* line 1447, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(2) h2 {
-    padding-top: 0;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 1453, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(2) div {
+  .proceso-pasos ol > li h2 span.conector {
+    display: block;
     width: 50%;
-    margin-left: 50%;
+    border-bottom: 3px solid #00adef;
+    position: absolute;
+    right: -11%;
+    top: 80px;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 1460, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(2):after {
-    border: 0;
-    display: none;
+  /* line 1459, ../sass-compass/_page.scss */
+  .proceso-pasos ol > li h2 span.conector span.bullet {
+    display: block;
+    position: absolute;
+    right: -22px;
+    bottom: -22px;
+    width: 25px;
+    height: 25px;
+    background: #00adef;
+    border: 10px solid white;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border-radius: 25px;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 1467, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(2):before {
-    width: 25%;
-    height: 100px;
-    border-top: 2px dashed #555555;
-    border-left: 2px dashed #555555;
-    float: left;
-    margin-left: 20%;
-    margin-top: 320px;
-    -moz-border-radius-topleft: 10px;
-    -webkit-border-top-left-radius: 10px;
-    border-top-left-radius: 10px;
-  }
-}
-@media screen and (min-width: 950px) {
-  /* line 1467, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(2):before {
-    margin-top: 305px;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  /* line 1467, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(2):before {
-    margin-top: 290px;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  /* line 1489, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(3) {
-    padding-top: 25px;
+  /* line 1479, ../sass-compass/_page.scss */
+  .proceso-pasos ol > li:nth-child(even) h2 span.conector {
+    left: -11%;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 1493, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(3) h2 {
-    padding-top: 0;
+  /* line 1484, ../sass-compass/_page.scss */
+  .proceso-pasos ol > li:nth-child(even) h2 span.conector span.bullet {
+    left: -22px;
   }
 }
-@media only screen and (min-width: 768px) {
-  /* line 1499, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(3) div {
-    width: 40%;
-    margin-right: 60%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 1506, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(3):after {
-    width: 30%;
-    height: 70px;
-    border-top: 2px dashed #555555;
-    border-right: 2px dashed #555555;
-    float: right;
-    margin-right: 25%;
-    margin-top: -80px;
-    -moz-border-radius-topright: 10px;
-    -webkit-border-top-right-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 1521, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(4) {
-    padding-top: 20px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 1526, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(4) h2 {
-    padding-top: 0;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 1532, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(4) div {
-    width: 50%;
-    margin-left: 50%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 1539, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(4):after {
-    border: 0;
-    display: none;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 1546, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(4):before {
-    width: 15%;
-    height: 100px;
-    border-top: 2px dashed #555555;
-    border-left: 2px dashed #555555;
-    float: left;
-    margin-left: 30%;
-    margin-top: 355px;
-    -moz-border-radius-topleft: 10px;
-    -webkit-border-top-left-radius: 10px;
-    border-top-left-radius: 10px;
-  }
-}
-@media screen and (min-width: 859px) {
-  /* line 1546, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(4):before {
-    margin-top: 340px;
-  }
-}
-@media screen and (min-width: 942px) {
-  /* line 1546, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(4):before {
-    height: 80px;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  /* line 1546, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(4):before {
-    height: 60px;
-    margin-top: 325px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 1572, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(5) h2 {
-    padding-top: 0;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 1578, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(5) div {
-    width: 60%;
-    margin-right: 40%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 1585, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(5):after {
-    width: 15%;
-    height: 75px;
-    border-top: 2px dashed #555555;
-    border-right: 2px dashed #555555;
-    float: right;
-    margin-right: 25%;
-    margin-top: -80px;
-    -moz-border-radius-topright: 10px;
-    -webkit-border-top-right-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 1599, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(6) {
-    padding-top: 25px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 1604, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(6) h2 {
-    padding-top: 0;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 1610, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(6) div {
-    width: 50%;
-    margin-left: 50%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 1617, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(6):after {
-    border: 0;
-    display: none;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 1624, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(6):before {
-    width: 15%;
-    height: 40px;
-    border-top: 2px dashed #555555;
-    border-left: 2px dashed #555555;
-    float: left;
-    margin-left: 30%;
-    margin-top: 260px;
-    -moz-border-radius-topleft: 10px;
-    -webkit-border-top-left-radius: 10px;
-    border-top-left-radius: 10px;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  /* line 1624, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(6):before {
-    height: 30px;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  /* line 1643, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(7) {
-    padding-top: 25px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 1647, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(7) h2 {
-    padding-top: 0;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 1653, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(7) div {
-    width: 60%;
-    margin-right: 40%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 1660, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(7):after {
-    width: 20%;
-    height: 50px;
-    border-top: 2px dashed #555555;
-    border-right: 2px dashed #555555;
-    float: right;
-    margin-right: 25%;
-    margin-top: -80px;
-    -moz-border-radius-topright: 10px;
-    -webkit-border-top-right-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-}
-@media screen and (min-width: 771px) {
-  /* line 1660, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(7):after {
-    width: 12%;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  /* line 1660, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(7):after {
-    width: 15%;
-  }
-}
-/* line 1682, ../sass-compass/_page.scss */
-.proceso-pasos ol > li:nth-child(8) h2:before {
-  content: "\e021";
-}
-@media only screen and (min-width: 768px) {
-  /* line 1685, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(8) h2 {
-    padding-top: 0;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 1691, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(8) div {
-    width: 50%;
-    margin-left: 50%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 1698, ../sass-compass/_page.scss */
-  .proceso-pasos ol > li:nth-child(8):after {
-    border: 0;
-    display: none;
-  }
-}
-/* line 1710, ../sass-compass/_page.scss */
+/* line 1495, ../sass-compass/_page.scss */
 .proceso-pasos h2 {
   text-align: center;
 }
-/* line 1714, ../sass-compass/_page.scss */
+/* line 1499, ../sass-compass/_page.scss */
 .proceso-pasos ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 1717, ../sass-compass/_page.scss */
+/* line 1502, ../sass-compass/_page.scss */
 .proceso-pasos ul li {
   margin: 0 0 10px 23px;
 }
-/* line 1721, ../sass-compass/_page.scss */
+/* line 1506, ../sass-compass/_page.scss */
 .proceso-pasos ul li:before {
   content: " ";
   width: 8px;
@@ -4991,28 +4798,28 @@ article.proyecto-individual .movil p {
   float: left;
   margin: 8px 0 0 -15px;
 }
-/* line 1732, ../sass-compass/_page.scss */
+/* line 1517, ../sass-compass/_page.scss */
 .proceso-pasos ul em {
   font-weight: bold;
   font-style: normal;
 }
 
-/* line 1741, ../sass-compass/_page.scss */
+/* line 1526, ../sass-compass/_page.scss */
 .resaltar-menos {
   background: #444444;
   color: white;
 }
 
-/* line 1747, ../sass-compass/_page.scss */
+/* line 1532, ../sass-compass/_page.scss */
 footer p {
   text-align: center;
 }
-/* line 1750, ../sass-compass/_page.scss */
+/* line 1535, ../sass-compass/_page.scss */
 footer a {
   color: #ff4d4d;
 }
 
-/* line 1755, ../sass-compass/_page.scss */
+/* line 1540, ../sass-compass/_page.scss */
 small {
   text-align: center;
   font-size: 14px;

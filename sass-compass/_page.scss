@@ -1356,17 +1356,51 @@ article.proyecto-individual{
 		list-style-type:none;
 		margin:0;
 		padding:0;
+		position:relative;
+
+		@include breakpoint(senior){
+			background: #fff;
+			@include background-image(linear-gradient(color-stops($white, $white 80px, $white 100px, $lightcolor 101px, $lightcolor 3340px, $white 3341px )));
+			background-position: 50%;
+			background-repeat: repeat-y;
+			background-size: 3px 100%;
+		}
+
+		@media screen and (min-width:800px){
+			@include background-image(linear-gradient(color-stops($white, $white 80px, $white 100px, $lightcolor 101px, $lightcolor 3320px, $white 3321px )));
+		}
+		@media screen and (min-width:825px){
+			@include background-image(linear-gradient(color-stops($white, $white 80px, $white 100px, $lightcolor 101px, $lightcolor 3275px, $white 3276px )));
+		}
+		@media screen and (min-width:850px){
+			@include background-image(linear-gradient(color-stops($white, $white 80px, $white 100px, $lightcolor 101px, $lightcolor 3255px, $white 3256px )));
+		}
+		@media screen and (min-width:900px){
+			@include background-image(linear-gradient(color-stops($white, $white 80px, $white 100px, $lightcolor 101px, $lightcolor 3215px, $white 3216px )));
+		}
+		@media screen and (min-width:932px){
+			@include background-image(linear-gradient(color-stops($white, $white 80px, $white 100px, $lightcolor 101px, $lightcolor 3195px, $white 3196px )));
+		}
+		@media screen and (min-width:955px){
+			@include background-image(linear-gradient(color-stops($white, $white 80px, $white 100px, $lightcolor 101px, $lightcolor 3100px, $white 3101px )));
+		}
 	} //ol
 
 	ol > li:after{
 		content:" ";
 		width:1px;
 		height:100px;
-//		border-right: 2px dashed $textcolor;
 		border-right: 4px solid $lightcolor;
 		display:block;
 		margin:30px auto;
+
+		@include breakpoint(senior){
+			height:0;
+			border-right:0;
+		}
+
 	}
+
 
 	ol > li:last-child:after{
 		border:0;
@@ -1374,6 +1408,17 @@ article.proyecto-individual{
 	}
 
 	ol > li{
+		position:relative;
+		@include breakpoint(senior){
+			width:45%;
+		}
+
+		&:nth-child(even){
+			@include breakpoint(senior){
+				margin-left:55%;
+			}
+
+		}
 
 		ul:li:before{
 			background:$lightcolor;
@@ -1389,319 +1434,62 @@ article.proyecto-individual{
 			margin:0 auto 25px auto;
 			display:block;
 			background:$lightcolor;
-			@include border-radius(80px);
+			@include border-radius(84px);
 			@include font-size(72);
 			font-weight:normal;
+			position:relative;
+			z-index:2;
+			@include breakpoint(senior){
+				border:3px solid $white;
+			}
 		}
 
-
-		&:first-child{
-
-			h2{
-				@include breakpoint(senior){
-					padding-top:0;
-					text-align:left;
-				}
-			}
-
-			h2, p, ul{
-				@include breakpoint(senior){
-					width:60%;
-				}
-			}
-
-			h2:before{
-				@include breakpoint(senior){
-					display:inline-block;
-					float:left;
-					margin:0 3% 100px 0;
-				}
-			}
-
-			&:after{
-				@include breakpoint(senior){
-					width:15%;
-					height:50px;
-					border-top:2px dashed $textcolor;
-					border-right:2px dashed $textcolor;
-					float:right;
-					margin-top:-90px;
-					margin-right:25%;
-					@include border-top-right-radius(10px);
-				}
-				@media screen and (min-width:950px){
-					margin-top:-110px;
-				}
-				@include breakpoint(director){
-					margin-top:-125px;
-				}
-			}
-
-		}
-
-		&:nth-child(2){
+		h2 span.conector{
 			@include breakpoint(senior){
-				padding-top:25px;
+				display:block;
+				width:50%;
+				border-bottom:3px solid $lightcolor;
+				position:absolute;
+				right:-11%;
+				top:80px;
 			}
 
-			h2{
+
+
+			span.bullet{
 				@include breakpoint(senior){
-					padding-top:0;
+					display:block;
+					position:absolute;
+					right:-22px;
+					bottom:-22px;
+					width:25px;
+					height:25px;
+					background:$lightcolor;
+					border: 10px solid $white;
+					@include border-radius(25px);
 				}
-			}
+			} //span.bullet
 
-			div{
-				@include breakpoint(senior){
-					width:50%;
-					margin-left:50%;
-				}
-			}
+		} //span.conector
 
-			&:after{
-				@include breakpoint(senior){
-					border:0;
-					display:none;
-				}
-			}
-
-			&:before{
-				@include breakpoint(senior){
-					width:25%;
-					height:100px;
-					border-top:2px dashed $textcolor;
-					border-left:2px dashed $textcolor;
-					float:left;
-					margin-left:20%;
-					margin-top:320px;
-					@include border-top-left-radius(10px);
-
-				}
-				@media screen and (min-width:950px){
-					margin-top:305px;
-				}
-				@include breakpoint(director){
-					margin-top:290px;
-				}
-			}
-
-		} //nth-child(2)
-
-		&:nth-child(3){
-			@include breakpoint(director){
-				padding-top:25px;
-			}
-			h2{
-				@include breakpoint(senior){
-					padding-top:0;
-				}
-			}
-
-			div{
-				@include breakpoint(senior){
-					width:40%;
-					margin-right:60%;
-				}
-			}
-
-			&:after{
-				@include breakpoint(senior){
-					width:30%;
-					height:70px;
-					border-top:2px dashed $textcolor;
-					border-right:2px dashed $textcolor;
-					float:right;
-					margin-right:25%;
-					margin-top:-80px;
-					@include border-top-right-radius(10px);
-				}
-			}
-
-		} //nth-child(3)
-
-		&:nth-child(4){
-			@include breakpoint(senior){
-				padding-top:20px;
-			}
-
-			h2{
-				@include breakpoint(senior){
-					padding-top:0;
-				}
-			}
-
-			div{
-				@include breakpoint(senior){
-					width:50%;
-					margin-left:50%;
-				}
-			}
-
-			&:after{
-				@include breakpoint(senior){
-					border:0;
-					display:none;
-				}
-			}
-
-			&:before{
-				@include breakpoint(senior){
-					width:15%;
-					height:100px;
-					border-top:2px dashed $textcolor;
-					border-left:2px dashed $textcolor;
-					float:left;
-					margin-left:30%;
-					margin-top:355px;
-					@include border-top-left-radius(10px);
-
-				}
-				@media screen and (min-width:859px){
-					margin-top:340px;
-				}
-				@media screen and (min-width:942px){
-					height:80px;
-				}
-				@include breakpoint(director){
-					height:60px;
-					margin-top:325px;
-				}
-			}
-		} //nth-child(4)
-
-		&:nth-child(5){
-			h2{
-				@include breakpoint(senior){
-					padding-top:0;
-				}
-			}
-
-			div{
-				@include breakpoint(senior){
-					width:60%;
-					margin-right:40%;
-				}
-			}
-
-			&:after{
-				@include breakpoint(senior){
-					width:15%;
-					height:75px;
-					border-top:2px dashed $textcolor;
-					border-right:2px dashed $textcolor;
-					float:right;
-					margin-right:25%;
-					margin-top:-80px;
-					@include border-top-right-radius(10px);
-				}
-			}
-		} //nth-child(5)
-
-		&:nth-child(6){
-			@include breakpoint(senior){
-				padding-top:25px;
-			}
-
-			h2{
-				@include breakpoint(senior){
-					padding-top:0;
-				}
-			}
-
-			div{
-				@include breakpoint(senior){
-					width:50%;
-					margin-left:50%;
-				}
-			}
-
-			&:after{
-				@include breakpoint(senior){
-					border:0;
-					display:none;
-				}
-			}
-
-			&:before{
-				@include breakpoint(senior){
-					width:15%;
-					height:40px;
-					border-top:2px dashed $textcolor;
-					border-left:2px dashed $textcolor;
-					float:left;
-					margin-left:30%;
-					margin-top:260px;
-					@include border-top-left-radius(10px);
-
-				}
-				@include breakpoint(director){
-					height:30px;
-				}
-			}
-		} //nth-child(6)
-
-
-		&:nth-child(7){
-			@include breakpoint(director){
-				padding-top:25px;
-			}
-			h2{
-				@include breakpoint(senior){
-					padding-top:0;
-				}
-			}
-
-			div{
-				@include breakpoint(senior){
-					width:60%;
-					margin-right:40%;
-				}
-			}
-
-			&:after{
-				@include breakpoint(senior){
-					width:20%;
-					height:50px;
-					border-top:2px dashed $textcolor;
-					border-right:2px dashed $textcolor;
-					float:right;
-					margin-right:25%;
-					margin-top:-80px;
-					@include border-top-right-radius(10px);
-				}
-				@media screen and (min-width:771px){
-					width:12%;
-				}
-				@include breakpoint(director){
-					width:15%;
-				}
-			}
-
-		} //nth-child(7)
-
-		&:nth-child(8){
-			h2{
-				@include breakpoint(senior){
-					padding-top:0;
-				}
-			}
-
-			div{
-				@include breakpoint(senior){
-					width:50%;
-					margin-left:50%;
-				}
-			}
-
-			&:after{
-				@include breakpoint(senior){
-					border:0;
-					display:none;
-				}
-			}
-
-		}
 
 	} //li
+
+	ol > li:nth-child(even){
+		h2 span.conector{
+			@include breakpoint(senior){
+				left:-11%;
+			}
+
+			span.bullet{
+				@include breakpoint(senior){
+					left:-22px;
+				}
+			} //span.bullet
+		}
+
+	}
+
 
 
 	h2{
